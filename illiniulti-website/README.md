@@ -2,9 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Currently it's using the [https://illinois-rise.github.io/illinois-website.github.io/](https://illinois-rise.github.io/illinois-website.github.io/) as the homepage, eventually change it to the custom domain when replacing the CNAME
+
+Will be using [react-twitter-widgets](https://www.npmjs.com/package/react-twitter-widgets) and [google-spreadsheet](https://github.com/theoephraim/node-google-spreadsheet)
+UI will be using [material-ui](https://mui.com/material-ui/getting-started/usage/)
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm run deploy`
+Will deploy the app to the gh-pages branch. 
 
 ### `npm start`
 
