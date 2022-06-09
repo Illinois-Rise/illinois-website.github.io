@@ -1,0 +1,27 @@
+import * as React from 'react';
+// import './Header.css';
+import { Box, AppBar } from '@mui/material';
+import { Typography } from '@mui/material';
+import RisePhoenix from '../images/RisePhoenix.png'
+import './Header.css'
+import { maxHeight } from '@mui/system';
+function Header() {
+  return (
+    <Box>
+        <AppBar
+            sx={{height: '200px',
+            justifyContent: 'center',
+            alignItems: 'center'}}>
+                <Box sx={{ display: 'flex'}}>
+                    {//The image is not flexible
+                    }
+                    <img src={RisePhoenix} alt="Illinois Rise Phoenix Logo" className='Logo' height="90px"></img>
+                    <Typography variant="h1">Illinois Rise</Typography>
+                </Box>
+        </AppBar>
+    </Box>
+
+  );
+}
+
+export default Header;
