@@ -6,6 +6,8 @@ Currently it's using the [https://illinois-rise.github.io/illinois-website.githu
 
 Will be using [react-twitter-widgets](https://www.npmjs.com/package/react-twitter-widgets) and [google-spreadsheet](https://github.com/theoephraim/node-google-spreadsheet)
 UI will be using [material-ui](https://mui.com/material-ui/getting-started/usage/)
+
+Responsive Design using [react-responsive](https://www.npmjs.com/package/react-responsive)
 ## Available Scripts
 
 In the project directory, you can run:

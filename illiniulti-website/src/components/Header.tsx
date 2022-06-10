@@ -3,8 +3,6 @@ import * as React from 'react';
 import { Box, AppBar } from '@mui/material';
 import { Typography } from '@mui/material';
 import RisePhoenix from '../images/RisePhoenix.png'
-import './Header.css'
-import { maxHeight } from '@mui/system';
 function Header() {
   return (
     <Box>
