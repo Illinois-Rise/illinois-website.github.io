@@ -31,7 +31,7 @@ function NavBar(){
         setDropdownOpen(false);
         setAnchorEl(null);
     };
-
+    //TODO: Create actual links for the buttons so that they actually navigate using buttons
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
