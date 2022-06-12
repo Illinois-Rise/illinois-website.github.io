@@ -8,4 +8,4 @@ export const PRACTICE = 'practice';
 export const PROSPECTIVE_PLAYERS = 'prospective';
 export const ROSTER = 'roster'
 export const TEAM_HISTORY = 'teamhistory';
-export const TOURNAMENTS = 'tournament';
+export const TOURNAMENTS = 'tournaments';
