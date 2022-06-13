@@ -1,5 +1,5 @@
-import { Box } from '@mui/system';
 import React from 'react';
+import { Box } from '@mui/system';
 import 'react-slideshow-image/dist/styles.css';
 //pictures: To update, import the file from the images folder then add it to the images array
 import IU_Home1 from "../images/IU_Home1.jpg";
@@ -23,16 +23,21 @@ function Home() {
         sx={{
             width: '100%',
             maxWidth: 800,
+            alignItems: 'center',
+            pt: 2, //padding top
+
         }}>
             <Fade duration={7500} easing="ease">
                 {images.map((image, index) =>
-                    <Box
-                        component="img"
-                        width="inherit"
-                        src={image}
-                        alt={"Home Pic " + index}
-                        key={index}>
-                    </Box>
+                <Box
+                    component="img"
+                    width="inherit"
+                    src={image}
+                    alt={"Home Pic " + index}
+                    key={index}>
+                </Box>
+                
+                    
                 )}
                 
             </Fade>

@@ -5,19 +5,12 @@ import { Typography } from '@mui/material';
 import RisePhoenix from '../images/RisePhoenix.png'
 function Header() {
   return (
-    <Box>
-        <AppBar
-            sx={{height: '200px',
-            justifyContent: 'center',
-            alignItems: 'center'}}>
-                <Box sx={{ display: 'flex'}}>
-                    {//The image is not flexible
-                    }
-                    <img src={RisePhoenix} alt="Illinois Rise Phoenix Logo" className='Logo' height="90px"></img>
-                    <Typography variant="h1">Illinois Rise</Typography>
-                </Box>
-        </AppBar>
-    </Box>
+      <Box sx={{ display: 'flex'}} justifyContent='center'>
+            {//The image is not flexible
+            }
+          <img src={RisePhoenix} alt="Illinois Rise Phoenix Logo" className='Logo' height="90px"></img>
+          <Typography variant="h1">Illinois Rise</Typography>
+      </Box>
 
   );
 }
