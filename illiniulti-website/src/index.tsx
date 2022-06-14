@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { Grid } from '@mui/material';
 import reportWebVitals from './reportWebVitals';
 import AboutUs from './pages/AboutUs';
 import AbsentFormPage from './pages/AbsentFormPage';
@@ -33,25 +35,29 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route path={ABOUT_US} element={<AboutUs/>}/>
-          <Route path={ABSENT_FORM} element={<AbsentFormPage/>}/>
-          <Route path={AWARDS} element={<Awards/>}/>
-          <Route path={CONTACT_US} element={<ContactUs/>}/>
-          <Route path={HOME} element={<Home/>}/>
-          <Route path={PAST_RESULTS} element={<PastResults/>}/>
-          <Route path={PRACTICE} element={<Practice/>}/>
-          <Route path={PROSPECTIVE_PLAYERS} element={<ProspectivePlayers/>}/>
-          <Route path={ROSTER} element={<Roster/>}/>
-          <Route path={TEAM_HISTORY} element={<TeamHistory/>}>
-            <Route path=":historyId" element={<History/>}></Route>
+    
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />}>
+          
+            <Route path={ABOUT_US} element={<AboutUs/>}/>
+            <Route path={ABSENT_FORM} element={<AbsentFormPage/>}/>
+            <Route path={AWARDS} element={<Awards/>}/>
+            <Route path={CONTACT_US} element={<ContactUs/>}/>
+            <Route path={HOME} element={<Home/>}/>
+            <Route path={PAST_RESULTS} element={<PastResults/>}/>
+            <Route path={PRACTICE} element={<Practice/>}/>
+            <Route path={PROSPECTIVE_PLAYERS} element={<ProspectivePlayers/>}/>
+            <Route path={ROSTER} element={<Roster/>}/>
+            <Route path={TEAM_HISTORY} element={<TeamHistory/>}>
+              <Route path=":historyId" element={<History/>}></Route>
+            </Route>
+            <Route path={TOURNAMENTS} element={<Tournaments/>}/>
           </Route>
-          <Route path={TOURNAMENTS} element={<Tournaments/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+      
+    
   </React.StrictMode>
 );
 

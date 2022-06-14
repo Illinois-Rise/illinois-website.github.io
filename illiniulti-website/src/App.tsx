@@ -9,15 +9,10 @@ import { Grid } from '@mui/material';
 function App() {
   return (<div>
     {
-      /*
-      Structure will be router wrapping everything, then inside that
-      Header
-      Navbar
-      Then routes
-      
-      */
-      //TODO: Need to create Header
       //TODO: Need to center all the stuff
+      //TODO: Need to style everything
+      //TODO: Twitter, socials
+      //TODO: Paypal donor
     }
     <Grid container alignItems='center'>
       <Grid item xs={12}>

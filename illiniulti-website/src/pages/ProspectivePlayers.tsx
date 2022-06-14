@@ -3,16 +3,34 @@ import { Box, Button, FormControl, FormControlLabel, Radio, RadioGroup, TextFiel
 import React, { useState } from 'react';
 import {Controller, useForm} from 'react-hook-form';
 import { FormInputText } from '../components/FormInputText';
+import FormMessage from '../components/FormMessage';
 
 function ProspectivePlayers() {
     const { handleSubmit, control, reset, formState: { errors } } = useForm();
+    const [ success, setSuccess ] = useState(false);
+    const formOptions = {
+        firstname: { required: "First Name is required" },
+        lastname: { required: "Last Name is required" },
+        email: { required: "Email is required" },
+        hometown: { required: "Hometown is required" },
+        highschool: { required: "High School is required" },
+        major: { required: "Major is required (say Undecided if you don't know)" },
+        experience: { required: "Tell us something about your experience!" },
+        clubs: {required: "Say No if there are no clubs you plan to join"}
+        
+    }
+    const onFormSubmit = (data: any) => {
+        console.log(data)
+        setSuccess(true)
 
-    const onSubmit = (values:any) => {
-        console.log(values);
-        reset() 
-    };
+    }
+
+    const onError = (errors: any) => {
+        console.log(errors)
+    }
     //https://blog.logrocket.com/using-material-ui-with-react-hook-form/
     //TODO: Form validation
+    //TODO: Needs something at the bottom to say that its submitted, as well as a loading button *
     return (
         <>
         <h1 className="ui header">Prospective Players</h1>
@@ -26,53 +44,70 @@ function ProspectivePlayers() {
             sx={{
                 '& .MuiTextField-root': { m: 1, width: '50ch' },
             }}>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onFormSubmit, onError)}>
                 <FormInputText
                     name={"firstName"}
                     control={control}
                     label={"First Name"}
+                    rules={formOptions.firstname}
                 />
+                {errors?.firstName && <FormMessage message={errors.firstName.message} isFailure={true}/>}
                 <FormInputText
                     name={"lastName"}
                     control={control}
                     label={"Last Name"}
+                    rules={formOptions.lastname}
                 />
+                {errors?.lastName && <FormMessage message={errors.lastName.message} isFailure={true}/>}
                 <FormInputText
                     name={"email"}
                     control={control}
                     label={"Email"}
+                    rules={formOptions.email}
                 />
+                {errors?.email && <FormMessage message={errors.email.message} isFailure={true}/>}
                 <FormInputText
                     name={"hometown"}
                     control={control}
                     label={"Hometown"}
+                    rules={formOptions.hometown}
                 />
+                {errors?.hometown && <FormMessage message={errors.hometown.message} isFailure={true}/>}
                 <FormInputText
                     name={"highschool"}
                     control={control}
                     label={"High School Attended"}
+                    rules={formOptions.highschool}
                 />
+                {errors?.highschool && <FormMessage message={errors.highschool.message} isFailure={true}/>}
                 <FormInputText
                     name={"major"}
                     control={control}
                     label={"Planned Major"}
+                    rules={formOptions.major}
                 />
+                {errors?.major && <FormMessage message={errors.major.message} isFailure={true}/>}
                 <FormInputText
                     name={"experience"}
                     control={control}
                     label={"Ultimate Frisbee Experience"}
                     multiline={true}
+                    rules={formOptions.experience}
                 />
+                {errors?.experience && <FormMessage message={errors.experience.message} isFailure={true}/>}
                 <FormInputText
                     name={"clubs"}
                     control={control}
-                    label={"Other Clubs You Plan To Join?"}
+                    label={"Are there any other clubs you plan to join?"}
                     multiline={true}
+                    rules={formOptions.clubs}
                 />
+                {errors?.clubs && <FormMessage message={errors.clubs.message} isFailure={true}/>}
                 <Typography>Would you be alright with a captain or coach reaching out to you? *</Typography>
                 <Controller
                     name={"contact"}
                     control={control}
+                    defaultValue={"Yes"}
                     render={({field: { onChange, value }}) => (
                         <RadioGroup value={value} onChange={onChange} row defaultValue="Yes">
                             <FormControlLabel value="Yes" control={<Radio/>} label="Yes"/>
@@ -80,10 +115,13 @@ function ProspectivePlayers() {
                         </RadioGroup>
                 )}
     />
-                <Button onClick={handleSubmit(onSubmit)}>Submit</Button>
+                <Button onClick={handleSubmit(onFormSubmit)} variant="outlined">Submit</Button>
+                
             </form>
                 
-            {/* Needs something at the bottom to say that its submitted, as well as a loading button */}
+            {success ? 
+             <FormMessage message="Form Successfully Submitted" isFailure={false}/> : <></>
+            }
         </Box>
         </>
         
