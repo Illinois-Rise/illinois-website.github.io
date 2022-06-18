@@ -13,6 +13,7 @@ function App() {
       //TODO: Need to style everything
       //TODO: Twitter, socials
       //TODO: Paypal donor
+      //TODO: Create Footer
     }
     <Grid container alignItems='center'>
       <Grid item xs={12}>

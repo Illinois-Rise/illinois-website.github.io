@@ -8,6 +8,8 @@ Will be using [react-twitter-widgets](https://www.npmjs.com/package/react-twitte
 UI will be using [material-ui](https://mui.com/material-ui/getting-started/usage/)
 
 Routing using [react-router-dom](https://reactrouter.com/docs/en/v6/getting-started/overview)
+
+Changes: Not using Google Tag Manager to keep track of usage
 ## Available Scripts
 
 In the project directory, you can run:

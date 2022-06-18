@@ -1,9 +1,10 @@
 
 import { Box, Button, FormControl, FormControlLabel, Radio, RadioGroup, TextField, Typography } from '@mui/material';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {Controller, useForm} from 'react-hook-form';
 import { FormInputText } from '../components/FormInputText';
 import FormMessage from '../components/FormMessage';
+import { addProspective } from '../api/ProspectivePlayers';
 
 function ProspectivePlayers() {
     const { handleSubmit, control, reset, formState: { errors } } = useForm();
@@ -19,18 +20,21 @@ function ProspectivePlayers() {
         clubs: {required: "Say No if there are no clubs you plan to join"}
         
     }
-    const onFormSubmit = (data: any) => {
+    const onFormSubmit = async (data: any) => {
         console.log(data)
-        setSuccess(true)
-
+        //Cannot access the heroku server atm because of CORS, waiting on Nick
+        //TODO: Add timestamp and test whether it actually sends it to the server
+        const successfulSubmit = await addProspective(data);
+        if (successfulSubmit) {
+            setSuccess(true)
+        }
     }
 
     const onError = (errors: any) => {
         console.log(errors)
     }
-    //https://blog.logrocket.com/using-material-ui-with-react-hook-form/
-    //TODO: Form validation
-    //TODO: Needs something at the bottom to say that its submitted, as well as a loading button *
+    //TODO: Connect with Google Sheets
+    
     return (
         <>
         <h1 className="ui header">Prospective Players</h1>
@@ -114,14 +118,15 @@ function ProspectivePlayers() {
                             <FormControlLabel value="No" control={<Radio/>} label="No"/>
                         </RadioGroup>
                 )}
-    />
+                />
+                {success ? 
+                <FormMessage message="Form Successfully Submitted" isFailure={false}/> : <></>
+                }
                 <Button onClick={handleSubmit(onFormSubmit)} variant="outlined">Submit</Button>
                 
             </form>
                 
-            {success ? 
-             <FormMessage message="Form Successfully Submitted" isFailure={false}/> : <></>
-            }
+            
         </Box>
         </>
         

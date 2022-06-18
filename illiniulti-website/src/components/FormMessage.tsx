@@ -1,5 +1,6 @@
 import * as React from 'react';
 // import './Header.css';
+// TODO: make background light green or light red depending on isFailure
 import { Card, CardContent, Grid, Typography } from '@mui/material';
 
 interface FormMessageProps{
