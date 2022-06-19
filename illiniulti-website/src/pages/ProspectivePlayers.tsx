@@ -17,16 +17,17 @@ function ProspectivePlayers() {
         highschool: { required: "High School is required" },
         major: { required: "Major is required (say Undecided if you don't know)" },
         experience: { required: "Tell us something about your experience!" },
-        clubs: {required: "Say No if there are no clubs you plan to join"}
-        
+        clubs: {required: "Say No if there are no clubs you plan to join"}   
     }
     const onFormSubmit = async (data: any) => {
+        data = {timestamp: new Date(), ...data}
         console.log(data)
+        setSuccess(true)
         //Cannot access the heroku server atm because of CORS, waiting on Nick
         //TODO: Add timestamp and test whether it actually sends it to the server
         const successfulSubmit = await addProspective(data);
         if (successfulSubmit) {
-            setSuccess(true)
+            //setSuccess(true)
         }
     }
 
@@ -44,7 +45,6 @@ function ProspectivePlayers() {
         <p>We encourage prospective players to fill out our interest form and to reach out to the captains especially if you will be on campus. We are more than happy to meet up and discuss what Illinois can do for you, and to see what you can do to be ready for Illinois once you get on campus. Our contact information is below. Thank you for taking the time to visit our website, and we hope to hear from you soon.</p>
 
         <Box 
-            component="form"
             sx={{
                 '& .MuiTextField-root': { m: 1, width: '50ch' },
             }}>
@@ -55,42 +55,42 @@ function ProspectivePlayers() {
                     label={"First Name"}
                     rules={formOptions.firstname}
                 />
-                {errors?.firstName && <FormMessage message={errors.firstName.message} isFailure={true}/>}
+                
                 <FormInputText
                     name={"lastName"}
                     control={control}
                     label={"Last Name"}
                     rules={formOptions.lastname}
                 />
-                {errors?.lastName && <FormMessage message={errors.lastName.message} isFailure={true}/>}
+                
                 <FormInputText
                     name={"email"}
                     control={control}
                     label={"Email"}
                     rules={formOptions.email}
                 />
-                {errors?.email && <FormMessage message={errors.email.message} isFailure={true}/>}
+                
                 <FormInputText
                     name={"hometown"}
                     control={control}
                     label={"Hometown"}
                     rules={formOptions.hometown}
                 />
-                {errors?.hometown && <FormMessage message={errors.hometown.message} isFailure={true}/>}
+                
                 <FormInputText
                     name={"highschool"}
                     control={control}
                     label={"High School Attended"}
                     rules={formOptions.highschool}
                 />
-                {errors?.highschool && <FormMessage message={errors.highschool.message} isFailure={true}/>}
+                
                 <FormInputText
                     name={"major"}
                     control={control}
                     label={"Planned Major"}
                     rules={formOptions.major}
                 />
-                {errors?.major && <FormMessage message={errors.major.message} isFailure={true}/>}
+                
                 <FormInputText
                     name={"experience"}
                     control={control}
@@ -98,7 +98,7 @@ function ProspectivePlayers() {
                     multiline={true}
                     rules={formOptions.experience}
                 />
-                {errors?.experience && <FormMessage message={errors.experience.message} isFailure={true}/>}
+                
                 <FormInputText
                     name={"clubs"}
                     control={control}
@@ -106,7 +106,6 @@ function ProspectivePlayers() {
                     multiline={true}
                     rules={formOptions.clubs}
                 />
-                {errors?.clubs && <FormMessage message={errors.clubs.message} isFailure={true}/>}
                 <Typography>Would you be alright with a captain or coach reaching out to you? *</Typography>
                 <Controller
                     name={"contact"}
@@ -122,7 +121,7 @@ function ProspectivePlayers() {
                 {success ? 
                 <FormMessage message="Form Successfully Submitted" isFailure={false}/> : <></>
                 }
-                <Button onClick={handleSubmit(onFormSubmit)} variant="outlined">Submit</Button>
+                <input type="submit"/>
                 
             </form>
                 
