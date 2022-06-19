@@ -18,6 +18,8 @@ function AbsentFormPage() {
     }
 
     const onFormSubmit = async (data: any) => {
+        
+        data = {timestamp: new Date(), ...data}
         console.log(data)
         setSuccess(true)
         //Cannot access the heroku server atm because of CORS, waiting on Nick
