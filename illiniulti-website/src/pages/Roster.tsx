@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function Roster() {
-    return (
-        <p>Roster Page</p>
-    )
+  return <p>Roster Page</p>;
 }
 
 export default Roster;

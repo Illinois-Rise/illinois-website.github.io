@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function History() {
-    return (
-        <p>History of something</p>
-    )
+  return <p>History of something</p>;
 }
 
-export default History
+export default History;
