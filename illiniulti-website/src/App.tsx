@@ -14,6 +14,7 @@ function App() {
         //TODO: Twitter, socials
         //TODO: Paypal donor
         //TODO: Create Footer
+        //Prettier Everything: ./node_modules/.bin/prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
       }
       <Grid container alignItems="center">
         <Grid item xs={12}>

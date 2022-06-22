@@ -8,9 +8,10 @@ function Awards() {
   return (
     <Grid container>
       <Grid item sm={2} />
-      <Grid item sm={8}
-        justifyContent="center">
-        <Typography variant="h2" align='center'>Awards</Typography>
+      <Grid item sm={8} justifyContent="center">
+        <Typography variant="h2" align="center">
+          Awards
+        </Typography>
         <AwardsTable />
         <Box padding={1}>
           *All-Freshman team added in 2013, FOTY (Freshman of the Year) given to
