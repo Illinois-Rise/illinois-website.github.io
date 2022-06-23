@@ -1,12 +1,27 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Navigate, Outlet, useNavigate } from "react-router-dom";
 import { Box, Grid, Typography } from "@mui/material";
 import HistoryNav from "../components/HistoryNav";
-import HistorySection from "../components/HistorySection";
+import { HISTORY_DATA } from "../data/history/history.data";
 function TeamHistory() {
-  //TODO: Create images for the team history, thinking about routing
-  //Maybe just import literally all the images in here so webpack recognizes them?
-  // doesn't seem to be able to load on the fly with a `const pic = require(imagePath)
+  //TODO: Navigate to most recent history page
+  // const navigate = useNavigate()
+  // const [recent, setRecent] = useState("")
+  // const shouldRedirect = true;
+  // useEffect(() => {
+  //   const historyData = HISTORY_DATA
+  //   const years = historyData.map(data => {
+  //     return data.year
+  //   })
+  //   console.log(years)
+  
+  //   setRecent(Math.max(...years).toString())
+  //   if (shouldRedirect) {
+  //     navigate(recent)
+  //   }
+  // }, [])
+  
+ 
   return (
     <Grid container>
       <Grid item sm={2} />
@@ -16,7 +31,6 @@ function TeamHistory() {
         </Typography>
         <Box alignContent="center">
           <HistoryNav></HistoryNav>
-          <HistorySection></HistorySection>
         </Box>
         <Outlet />
       </Grid>

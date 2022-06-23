@@ -17,7 +17,7 @@ import ProspectivePlayers from "./pages/ProspectivePlayers";
 import Roster from "./pages/Roster";
 import TeamHistory from "./pages/TeamHistory";
 import Tournaments from "./pages/Tournaments";
-import History from "./components/History";
+import HistorySection from "./components/HistorySection";
 
 import {
   ABOUT_US,
@@ -50,7 +50,7 @@ root.render(
           <Route path={PROSPECTIVE_PLAYERS} element={<ProspectivePlayers />} />
           <Route path={ROSTER} element={<Roster />} />
           <Route path={TEAM_HISTORY} element={<TeamHistory />}>
-            <Route path=":historyId" element={<History />}></Route>
+            <Route path=":historyId" element={<HistorySection/>}></Route>
           </Route>
           <Route path={TOURNAMENTS} element={<Tournaments />} />
         </Route>
