@@ -1,5 +1,5 @@
 export interface HistoryYear {
   year: number;
-  imagePath: string;
+  image: string;
   summaryMarkup: string;
 }

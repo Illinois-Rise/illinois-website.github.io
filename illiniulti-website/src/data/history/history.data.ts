@@ -1,9 +1,32 @@
 import { HistoryYear } from "./history.model";
 
+import { TeamPhoto1984,
+  TeamPhoto1985,
+  TeamPhoto1986,
+  TeamPhoto2008,
+  TeamPhoto2009,
+  TeamPhoto2010,
+  TeamPhoto2011,
+  TeamPhoto2012,
+  TeamPhoto2013,
+  TeamPhoto2014,
+  TeamPhoto2015,
+  TeamPhoto2016,
+  TeamPhoto2017,
+  TeamPhoto2018,
+  TeamPhoto2019,
+  TeamPhoto2020,
+  TeamPhoto2021 } from "../../images";
+
+/*
+To add a photo to a HistoryYear entry, place the photo in the ./images/history/ folder
+then go to /images/index.js and add the import following the pattern
+Then add the image into the imports in this file, then add it as the image for your entry
+*/
 export const HISTORY_DATA: HistoryYear[] = [
   {
     year: 2021,
-    imagePath: "../images/history/team-photo-2021.jpg",
+    image: TeamPhoto2021,
     summaryMarkup: `
         <p> This year was an important year for Illinois Ultimate, as we were able to play with graduated seniors for the Fall 2021 USAU College Series. The Great Lakes region, which includes Michigan, Kentucky, Indiana, and Illinois, had an unexpected 2 bids to Nationals due to the size of the region. </p>
         <p> The season started with tryout tournaments at Butler and Stanley Cup, which finally put some of the 2020 freshmen on the field against non-Illinois. With cuts made, the A team with its graduated seniors swept most of the competition at Sectionals, landing the one championship game on Sunday against University of Chicago. This game was messy, with Rantoul having thunderstorms for an hour before the game start time and muddy conditions, and Illinois lost the game 9-7, but still able to make it to Regionals. </p>
@@ -14,7 +37,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2020,
-    imagePath: "./assets/team-photo-2020.jpg",
+    image: TeamPhoto2020,
     summaryMarkup: `
         <p>This season was cancelled due to the COVID-19 pandemic, but the efforts were not lost. Reid Martin, Joey Kennedy, and Anthony Ruzzo remained captains for the year, and pushed the team to improve even with all the restrictions. Practices went on during the school year, but everyone had to be separated into pods in the fall for social distancing and safety measures. We introduced skills competitions to allow for interaction for the entire team.</p>
         <p>With the rise of the spring, the team found that the spring 2021 season would be delayed to Fall 2021, and would allow previously graduated players to play for the team. It was during the spring that the road to Nationals was started, with the entire team focused on improving their skills to compete at the highest level. </p>
@@ -22,7 +45,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2019,
-    imagePath: "./assets/team-photo-2019.jpg",
+    image: TeamPhoto2019,
     summaryMarkup: `
         <p>Our 2019 year had Reid Martin, Joey Kennedy, and Anthony Ruzzo as the head of the Illinois Ultimate. This was a special year for the program as we initiated a rebrand to Illinois Rise, and sported our bread reversibles for the first time at T-Town Throwdown in Tuscaloosa. We found a lot of success, taking first place at T-Town and excited for the new year.</p>
         <p>However, at our next premier tournament in California, Prez Day, we suffered badly through injuries and losses, coming to 17th place. The team wanted to prove themselves again at Centex 2020, but unfortunately, the start of the COVID-19 Pandemic put a short end to our college series.</p>
@@ -30,15 +53,22 @@ export const HISTORY_DATA: HistoryYear[] = [
         `,
   },
   {
+    year: 2018,
+    image: TeamPhoto2018,
+    summaryMarkup: `
+            <p></p>
+        `,
+  },
+  {
     year: 2017,
-    imagePath: "./assets/team-photo-2017.jpg",
+    image: TeamPhoto2017,
     summaryMarkup: `
             <p></p>
         `,
   },
   {
     year: 2016,
-    imagePath: "./assets/team-photo-2016.jpg",
+    image: TeamPhoto2016,
     summaryMarkup: `
             <p>Illinois Ultimate came into the 2016 season with a taste of success and big shoes to fill. Returning captain Nick Prozorovsky and new captains Prayag Patel and Chris Buchta were tasked with the difficult prospect of replacing the 12 graduating players as well as coach Matt Stupca. Boomland coach Erik Huemiller and recent alum Matt West were able to fill the leadership void as the team looked to reload for another run at Nationals.</p>
             <p>The tryouts for the team were very competitive, with the biggest incoming class in recent memory. The final roster included 7 rookies, 1 grad student, 5 former Boomland players, and 12 returners. The newest iteration of Illinois Ultimate tested themselves at Missouri Loves Company, but returned with shoulder injuries to seniors Nick Prozorovsky and Alex Guy that would hamper them for the rest of the season.</p>
@@ -55,7 +85,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2015,
-    imagePath: "./assets/team-photo-2015.jpg",
+    image: TeamPhoto2015,
     summaryMarkup: `
             <p>After the worst regionals performance since 2006, Illinois entered the 2015 season with a new looking team and a new mindset. Major losses included long time coach Walden Nelson, as well as O-line stars Neal Phelps, Brian Rathunde, and Sean Hill. Marty Markenson returned as captain and was joined by first-timers Johnny Saniat and Nick Prozorovsky.</p>
             <p>The major change to the team came in the form of returning coach, Matt Stupca. Matt coached the team from 2006-2009 and brought them to Nationals twice, finishing in 5th place in 2008. The experienced coach gave the team the necessary leadership needed to rebuild the club for a possible Nationals run again.</p>
@@ -100,7 +130,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2014,
-    imagePath: "./assets/team-photo-2014.jpg",
+    image: TeamPhoto2014,
     summaryMarkup: `
             <p>Illinois entered the season hoping to return to Nationals. The team lost 3 time captain and Player of the Region, Ryan 'Kennedy' Smith. Returning captain and Machine star Neal Phelps was joined by first time junior captains Marty Markenson and Eric Bultman. The captaining team was young and inexperienced but Walden Nelson returned giving the team hope.</p>
             <p>At MLC the team was able to exceed expectations by finishing in 2nd place, losing to the eventual National Champions Colorado Mamabird in the finals. This win in addition to the previous year's nationals birth gave the team a cockiness they were unable to shed.</p>
@@ -110,7 +140,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2013,
-    imagePath: "./assets/team-photo-2013.jpg",
+    image: TeamPhoto2013,
     summaryMarkup: `
             <p>After the disappointing and heartbreaking finish in 2012, Illinois lost a huge chunk of veteran talent and had to reload for 2013. Ryan Smith was captain for the 3rd year in a row and was joined by three first year captains in Neal Phelps, Colin Reid and Nathan Gibbons. The captains and the seniors on the team used the previous year's finish as motivation and set the tone at practices throughout the whole year.</p>    
             <p>Tryouts were completed shockingly early for the 2nd year in a row. With so many open spots, Illinois was fortunate to receive a very deep and talented freshman class. Five freshman made the A-team, with three of them all coming from the same high school. A large chunk of the team were stepping into new roles or were new to college ultimate altogether. They would be forced to acclimate and adjust quickly if Illinois were to meet it's goals for the year.</p>    
@@ -124,7 +154,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2012,
-    imagePath: "./assets/team-photo-2012.jpg",
+    image: TeamPhoto2012,
     summaryMarkup: `
             <p>For the first time since 2008, Illinois returned a majority of the team and had high expectations going into the season. Major personnel losses included 2-time captain Austin Lien and 3-year O-line starter Chris Hidaka. Zach Frantz and Ryan Smith returned as captains and were joined by Kevin Bruns. With such a large number of returning A-teamers, tryouts were as competitive as ever and there were many people fighting for the few remaining spots. After following the Illinois tradition of making final cuts really late, 3 freshmen had made the A-team, which hadn't happened since 2009.</p>    
             <p>For such a veteran team, focus and urgency was lacking during the season. There were many times where people would be going through the motions and not getting the most of the practice. Unlike past years, when the senior class would set the tone for all their younger teammates, this year saw a rift open up between the seniors and the younger members of the team. This rift manifested itself in many ways throughout the season, but it came to a head at Centex where a team meeting was held Saturday night after pool play and two juniors spoke to all the seniors and told them to get their act together.</p>    
@@ -138,7 +168,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2011,
-    imagePath: "./assets/team-photo-2011.jpg",
+    image: TeamPhoto2011,
     summaryMarkup: `
             <p>The program lost several program mainstays such as 5-year A-teamer and 2-time captain Brian Phelan, Top 10 Callahan finisher and captain Walden Nelson, and Team Spirit Leader Kurt Zoellick among others. This required the large junior class to step up and meet the challenge. Juniors Zachary Frantz and Ryan Smith stepped up to become captains alongside returning captain Austin Lien. The captains surveyed the tryout pool and saw that it was one of the most competitive in recent history. Wanting to give everyone a fair look, final cuts weren't made until the end of January. After the smoke cleared, the final roster stood at 27 and after a 1 year hiatus of no freshman making the cut, 2 freshman found themselves on the team.</p>
             <p>Even with a full roster, Illinois battled the injury bug throughout the season. Dline handler Adam Wright tore his acl at Rivalry Reheat and only returned for a few points at Nationals. Captain Zachary Frantz battled Plantar Fasciitis the whole year, missing every tournament besides Regionals and Nationals. 5th year cutter Chris Hidaka badly sprained his ankle in the 2nd game of the first tournament and never quite regained his old form. Seniors Suleyman Ahmad and Jonathan Hatcher had leg problems of their own and were in and out of the line up. Junior Ryan Kurnik broke his hand and missed the last half of the season. In addition there were numerous other injuries that kept people away from the field.</p>
@@ -150,7 +180,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2010,
-    imagePath: "./assets/team-photo-2010.jpg",
+    image: TeamPhoto2010,
     summaryMarkup: `
             <p>Illinois had to deal with several big losses from the year before but none bigger than the departure of longtime coach Matt Stupca who coached from 2004-2009. The captains Brian Phelan, Walden Nelson and Austin Lien, had to come to terms with the responsibilities and extra work that Matt Stupca provided, and carry a bigger load themselves. Dealing with the heavy losses from the year before, Illinois called up a number of players from the B-team and two from the C-team which was a program first. Illinois spent much of the season acclimating the new players so that they would be ready for Nationals level competition.</p>
             <p>They had uneven results and growing pains throughout the year, with a highlight being making the finals of Mardis Gras before losing to Wisconsin by a substantial margin. It also included another shellacking by Michigan at Huck Finn as many players got their first taste of the regional rivalry. Illinois had several injuries throughout the year which made practice attendance an issue, however Illinois fought through them and went into the College Series mostly healthy.</p>
@@ -161,7 +191,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2009,
-    imagePath: "./assets/team-photo-2009.jpg",
+    image: TeamPhoto2009,
     summaryMarkup: `
             <p>2009 saw the departures of many fixtures of the Illinois program such as Joel Koehneman, Pat Stephens, Jake Segil and David Abram. In their place it was up to the class of 2005 to step up and lead the program. It was the first time in several years that there were 3 captains vacancies. They were filled by Denis Agniel, Brian Phelan and Charlie O'Brien. Like in 2006 when the team lost several impact players, the team was able to recruit a very deep class that rivals and may surpass the freshman class of 2006. This influx of freshman led to the 2nd year of the C- teams existence in the programs history.</p>    
             <p>The regular season for Illinois was very rough, with the team trying to find people who would be able to fill the big holes left by the departed players. This led to several big losses throughout the year and poor tournament finishes, culminating in a 13-2 beatdown by regional rival Michigan at Huck Finn. Going into the postseason/the college series, Illinois had a lot of uncertainty. At Sectionals, Illinois took care of business on Saturday and beat a tough North Park team in semifinals and made Finals against Notre Dame. In a rainy, cold final, Illinois looked like they did throughout the season and lost 15-10. This gave Illinois a 4 seed going into Regionals and a definite longshot for one of the two Nationals bids.</p>
@@ -171,7 +201,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2008,
-    imagePath: "./assets/team-photo-2008.jpg",
+    image: TeamPhoto2008,
     summaryMarkup: `
             <p>Using the loss at Regionals the previous year as motivation and determined to make Nationals in captains Joel Koehneman, Pat Stephans and David Abrams, final year. Many players on the team spent their summer and fall, going to tournaments together in an effort to get better. Illinois also got a key transfer student Denis Agniel, who created the team at Loyola University in Chicago. This was a very veteran team under coach Matt Stupca that was poised to make a run into Nationals.</p>    
             <p>Throughout the season, Illinois had a chance to win every game that they played. The biggest margin of victory in Illinois' losses heading into Regionals was 3 points. Illinois suffered some key injuries before Sectionals but managed to persevere and hold of North Park in an exciting 17-16 Sectional Final. Like the previous year Illinois had a 2 seed going into Regionals. They took care of business on Saturday winning all 3 games and securing a spot in the Regional finals. In many people's first Regional final, Illinois played tentatively and lost 15-11 to Michigan putting them in the 2nd place game against Ohio State. In a reversal of the previous years game at Regionals, Illinois stormed out to a big lead and maintained it throughout and punched their first ticket to Nationals in 3 years.</p>    
@@ -180,7 +210,7 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2007,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>Coming off of one the worst years in recent history, Illinois started to put the pieces in place to make a run at a Nationals berth. The leadership which added Jake Segil as a captain, joining Joel Koehneman and Brian Korbesmeyer and Matt Stupca as coach, continued to focus on recruiting, resulting in an another big influx of freshman. Resulting in the creation of the first C-team in the programs history. However, unlike the previous year, many of them stopped playing within a year.</p>    
             <p>In order to gear up to make a run and to face stiffer competition, Illinois designed a much harder tournament schedule travelling to tournaments in Las Vegas and Austin, in addition to ones they had previously gone to in Baton Rouge and Atlanta. This benefited the team, as they were able to match up and see where they stood in relation to both Nationals finalists. As a result, the team was able to see that they were more than prepared to take a Nationals berth out of Regionals.</p>    
@@ -190,119 +220,119 @@ export const HISTORY_DATA: HistoryYear[] = [
   },
   {
     year: 2006,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>After coming so close to a Nationals berth the year before, 2006 was a rebuilding year for Illinois. After losing several starting players, the captains, Brian Korbesmeyer and Joel Koehneman and coach Matt Stupca, decided to focus their energies on recruiting and replenishing the program. This led to one of the deepest freshman classes in the programs history largely due to the efforts of Brian Korbesmeyer. In order to facilitate the rebuilding process, the leadership decided to go with a very small A-team roster of less than 20 guys, so that everyone would be able to play both on the A-team and on the B-team. The B-team with the services of coach Nick McDuffee was able to nurture the players and have them ready to take the next step onto the A-team. It was a season with very few bright spots, as Illinois did not make the Sectional final for one of the few times in modern history, finishing 4th at Sectionals, and did not even make Sunday of Regionals, finishing tied for 7th after losing in quarterfinals and getting eliminated in the backdoor bracket. However, there were encouraging signs for future years to come, Brian Phelan won freshman of the year for the Great Lakes Region and there were several talented players waiting in the wings, ready to make their mark on the program and the same core of players returning.</p>    
         `,
   },
   {
     year: 2005,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>Illinois advanced to the finals at Regionals and lost to Michigan on double game point, and had to immediately play Michigan State for second place and the chance to return to nationals. Coming out flat after the loss to Michigan Illinois went down 3-0. Battled back to double game point but again lost and were eliminated.</p>
         `,
   },
   {
     year: 2004,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>Illinois finished second at Regionals and advanced to Nationals in Seattle, Washington. Illinois lost a close game to North Carolina State in Prequarters and finished 9th.</p>
         `,
   },
   {
     year: 2003,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>Illinois started being invited to the major tournaments, including its first invite to Easterns. This helped prepare the team for the season. Seeded first at Regionals, Illinois lost in the finals to Ohio State and advanced to Nationals in Austin, TX. After beating Michigan and Georgia fairly handily in the first two games, Illinois beat North Carolina State 17-15 to win the pool. In quarters Illinois matched up with Colorado.They were 3 feet away from being up 14-13, pulling downwind, but victory eluded them, and ended up finishing tied for 5th.</p>
         `,
   },
   {
     year: 2002,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>The program made a big jump forward under the coaching of Joe Ferrari. The team advanced to the Regional Final for the first time ever, the Final was against Michigan. There was a consistent wind of 25-35 mph with gusts of over 40. For a lot of the game it was upwind/downwind with the huck and zone strategy being employed. Then early in the second half we got a big break off and were able to work the disc up the backhand sideline all the way to the endzone for a score to take the lead. From there we maintained our lead up to 13-12. Michigan worked the disc upwind and called a timeout 5 yards out of the endzone on the forehand side. Out of the timeout they had a man break open on the force side. Alvin Wang was able to run past for the game saving d. We were able to score that point and the next downwinder in the back corner of the endzone to advance to our first Nationals. Illinois' first Nationals tournament was in Spokane, WA. We lost many close games early to Colorado and Carleton. We beat Colorado later in the tournament and finished 9th.</p>
         `,
   },
   {
     year: 2001,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>Bill Finn and Nick McDuffee joined the team this year, and the team was the strongest it had ever been with these two outstanding rookies. Many of the older returners now had 3-4 years of competitive ultimate under their belts, and the team was on the verge of breaking through. A Sectional final win over Indiana set up Illinois as the 3rd seed at Regionals behind Michigan and OSU (regional hosts). After beating a tough ND team in quarterfinals, Illinois faced Michigan in the semifinals. Despite being up by a few goals at half-time, Michigan's Nationals experience showed and they ended up winning a closely fought game. Sunday morning, Illinois lost to Oberlin, making it three straight years of semifinal losses at Regionals.</p>
         `,
   },
   {
     year: 2000,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>Illinois changed its name to FIST and had another good recruiting class with the likes of Greg Severin, Chris Hagen, Nels Overgaard-Cook, Kyle Eertmoed, Brian Fifarek, and Dave Draeger. Illinois went to the Stanford Invite for the first time. Regionals was at Purdue University that year, and Illinois lost to Dayton in semifinals, beat Oberlin Sunday morning, and then lost an elimination game to Notre Dame.</p>
         `,
   },
   {
     year: 1999,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>1999 saw another surge in the team's development. More recruits like Alvin Wang, John Koltse, and Kevin Patterson joined the team. The College Regions were redrawn which meant that Illinois had a real opportunity to qualify for nationals in the newly formed Great Lakes Region. It was a great year for the team, which racked up many wins, including wins at Frozen Over in Bloomington, IN and the first Sectional Championship for the team. Coming into Regionals, Illinois was seeded second and hosted the tournament. The team lost a heartbreaker in semifinals to Oberlin College, and then lost an elimination game on Sunday morning to Notre Dame.</p>
         `,
   },
   {
     year: 1998,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>Was a transformational year for the program, as a great class of rookies joined Illinois. Jarrett Bialek, Xia Xi, Andy Zill, Kyle Romberg, and Jacob Dee were among the new players who helped push the team to towards becoming a more legitimate program. The team changed their name to 'Men From Mars', got uniforms, designed new discs, and actually started practicing a real offensive scheme and spent more time working out off the field. Illinois set the goal of qualifying for Regionals, and at that time the Central Region included every state from Minnesota to Illinois to Colorado. A 4th place finish at sectionals propelled them to their first Regionals birth in many years. At Regionals in Michigan, Illinois played Grinnell and Colorado State pool play, but were eliminated from competition on Saturday.</p>
         `,
   },
   {
     year: 1997,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>Tom Coffin aka Iron Man, an older player deserves credit for organizing the program and recruiting efforts. He moved to Champaign in the fall of 1996 and really helped lead the program in the right direction along with players like Joe Ferrari and Ryan Fehrenbacher and others. In the fall of 1996, the team was mostly filled with graduate students and older players, and had a 'serious' pick-up vibe where practices were mostly scrimmages with some occasional drills. Under Captain Ted Winrow, 'Big Red Ultimate' struggled to win many games, but traveled to tournaments in Baton Rouge, LA, Carbondale, IL, Madison, WI, amongst a few others. Key players included John Conour, Leo Wang, Jon Rasmussen, and David Fiske. Joe Ferrari and Matt Taylor were the only freshmen, who showed up consistently, and the year ended with a low finish at Sectionals and Illinois did not qualify for Regionals that year. BRU - the origin of this name comes from the practice on the team where if you got handblocked you had to chug a bottle of Big Red Soda, which had some significance.</p>
         `,
   },
   {
     year: 1996,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>Illinois again hosted Sectionals and qualified for Regionals, finishing 3rd behind Notre Dame and Indiana. Our team by this point was more than half undergraduates; there were at most 14 at Regionals. The team was run at this time by Ted Winrow. Ted and Gary Ledonne were basically the entire team. Bill Branson was still playing, John Connour was in his first year, Leo Wang was in his first year alSophomore Gary Ledonne had to convince players to attend Regionals in West Lafayette. Illinois went 0-3 in pool play losing relatively close games to Colorado and Oberlin.</p>
         `,
   },
   {
     year: 1995,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>After losing 2 of our top grad students Illinois lost in the game to go to Regionals to Ball State.</p>
         `,
   },
   {
     year: 1994,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>In February of 1994, Illinois had winter practices in the Armory and the Bubble. The University would give us 1.5 hours a week Sunday night 10:30 to Midnight, we split use with the women's team. The makeup of the team was much different, there were had 17 players at Sectionals 4 were undergrads. Almost all grad students and most were in their late 20's. There was little to no recruiting effort. Practice generally consisted of some bad drills, but they were drills designed to learn how to throw in most cases, then we scrimmaged. Our level of athleticism was awful compared to today's game, but our older team was pretty strong throwing, at least for a college team at that time. Wind was our friend as it allowed us to run a zone. In any case the team was fairly solid. Tony Curtis, Mike Percy, and Bill Branson were some of the strong grad student throwers. Mike Fritz an old undergrad at 23, Ted Winrow and Gary Ledonne both sophomores were the contributing undergrads. The team hosted Sectionals and took 2nd to Purdue, our big win was beating Indiana who had been the strength of the Section. Regionals was in Grinnell, Iowa. It was the first year they had moved Colorado into our Region as they had lobbied for an easier Region. At Regionals Illinois went 3-1 in pool play, losing to Purdue, beating Colorado, Macalester, and Grinnell. In pre-quarters we beat Dayton making the top 8 double elimination for 3 spots. Lost to Carleton and Oberlin and that was it.</p>
         `,
   },
   {
     year: 1986,
-    imagePath: "./assets/team-photo-1986.jpg",
+    image: TeamPhoto1986,
     summaryMarkup: `
             <p>In the Spring of 1986 we traveled to Ball State and won sectionals, by a wide margin, pounding on Ball State in the Finals. A week later, we hosted Regionals at the U of I. Only two teams would go to College Nationals and we knew we had to beat either Kansas (the Horrorzontals) or the #1 Seed, Southwest Missouri State. We lost to Southwest Missouri State in pool play on day 1, which set up a semi-final game with KU on Sunday. We lost in a close back and forth game, on a brutally hot day.</p>
         `,
   },
   {
     year: 1985,
-    imagePath: "./assets/team-photo-1985.jpg",
+    image: TeamPhoto1985,
     summaryMarkup: `
             <p>From 1985 to at least 1988 the team became known as Tiny Livestock and took on a new spirit. Jack Adams came up with the name "Tiney Livestock" and, along with Blake Wolf, made us shirts that we wore for the next two years.</p> <p>The team, with its new additions from the previous year, started peaking in the Fall of 1985, beating Full Tilt on their home field and competing successfully in tournaments from St Louis to the "Poultry Days" tourney in Versailles, Ohio.</p> <p>Led by botany grad student Tom Carol and a few others, TL became a much more serious team. We won sectionals in 1985 at Ball State missing out on a national bid by losing to SWMS and Kansas when Illinois hosted the Regionals in Champaign. The team later included an emerging Freshman named Kevin Pondy who later took the team to an even higher standard in the late 80s.</p>
         `,
   },
   {
     year: 1983,
-    imagePath: "../images/history/team-photo-1984.jpg",
+    image: TeamPhoto1984,
     summaryMarkup: `
             <p>In 1983, TL began practicing in Carle Park in Urbana. There was a lot of interest in the team and a number of students started showing up. We travelled all over the midwest, playing all the great teams of the era: Windy City, The Tunas, and our college nemesis, Full Tilt Ultimate from Carbondale.</p> <p>The team was bolstered by the addition of a few excellent players who came to town for school: Brent Russell, a speedy, rangy, intense "deep" player who could always get open long. Jeff Sternberg, a graduate student in Chemistry who was an excellent handler, and Ricky Werner, a Japanese major with superior disc skills. There also were a number of undergraduates who were just learning the game, but were excellent athletes like: Mike "Spike" Balas, Phil Lawrence, Phil Kerwin, Jake Stake, and Mike McClain. And as these guys improved, the team improved. Rounding out the team were Ed Flint, another grad student/handler and Mike Tower, who, along with his brother, Pat, had played on Windy City. Mike, like all players from City, had an incredible arsenal of throws.</p> <p>By the winter of 1984 we had gotten more organized and started having regular winter practices in the old Armory and we started getting serious about conditioning and building a team spirit.</p>
         `,
   },
   {
     year: 1978,
-    imagePath: "",
+    image: "",
     summaryMarkup: `
             <p>From at least 1978 to 1983 the team was called The Rastas, and that pretty much summed up the ethos. We had a few good players, but let's just say the team was not completely focused on athletic excellence. The class of the region back then was Earlham College and SIU (Full Tilt). Earlham was an early adopter of a tight zone (4-2-1) and, without strong disc skills, it was pretty daunting. SIU was an athletic group that had speed and solid skills with players like Future Windy City star Dean Smith</p>
         `,
