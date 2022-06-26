@@ -14,8 +14,8 @@ import TeamPhoto2017 from './history/team-photo-2017.jpg'
 import TeamPhoto2018 from './history/team-photo-2018.jpg'
 import TeamPhoto2019 from './history/team-photo-2019.jpg'
 import TeamPhoto2020 from './history/team-photo-2020.jpg'
-import TeamPhoto2021 from './history/team-photo-2021.jpg'
-// import TeamPhoto2022 from './history/team-photo-2022.jpg'
+import TeamPhoto2021 from './history/team-photo-2021.png'
+import TeamPhoto2022 from './history/team-photo-2022.png'
 
 
 export {
@@ -36,5 +36,5 @@ export {
     TeamPhoto2019,
     TeamPhoto2020,
     TeamPhoto2021,
-    // TeamPhoto2022,
+    TeamPhoto2022,
 };

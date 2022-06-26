@@ -5,21 +5,22 @@ import HistoryNav from "../components/HistoryNav";
 import { HISTORY_DATA } from "../data/history/history.data";
 function TeamHistory() {
   //TODO: Navigate to most recent history page
-  // const navigate = useNavigate()
-  // const [recent, setRecent] = useState("")
-  // const shouldRedirect = true;
-  // useEffect(() => {
-  //   const historyData = HISTORY_DATA
-  //   const years = historyData.map(data => {
-  //     return data.year
-  //   })
-  //   console.log(years)
+  const navigate = useNavigate()
+  const [recent, setRecent] = useState("")
+  const shouldRedirect = true;
+  useEffect(() => {
+    const historyData = HISTORY_DATA
+    const years = historyData.map(data => {
+      return data.year
+    })
+    console.log(years)
   
-  //   setRecent(Math.max(...years).toString())
-  //   if (shouldRedirect) {
-  //     navigate(recent)
-  //   }
-  // }, [])
+    const recent = Math.max(...years).toString()
+    console.log(recent)
+    if (shouldRedirect) {
+      navigate(recent)
+    }
+  }, [])
   
  
   return (

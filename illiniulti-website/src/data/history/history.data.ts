@@ -16,7 +16,8 @@ import { TeamPhoto1984,
   TeamPhoto2018,
   TeamPhoto2019,
   TeamPhoto2020,
-  TeamPhoto2021 } from "../../images";
+  TeamPhoto2021, 
+  TeamPhoto2022} from "../../images";
 
 /*
 To add a photo to a HistoryYear entry, place the photo in the ./images/history/ folder
@@ -24,6 +25,13 @@ then go to /images/index.js and add the import following the pattern
 Then add the image into the imports in this file, then add it as the image for your entry
 */
 export const HISTORY_DATA: HistoryYear[] = [
+  {
+    year: 2022,
+    image: TeamPhoto2022,
+    summaryMarkup: `
+    2022 history
+    `
+  },
   {
     year: 2021,
     image: TeamPhoto2021,
@@ -47,10 +55,17 @@ export const HISTORY_DATA: HistoryYear[] = [
     year: 2019,
     image: TeamPhoto2019,
     summaryMarkup: `
-        <p>Our 2019 year had Reid Martin, Joey Kennedy, and Anthony Ruzzo as the head of the Illinois Ultimate. This was a special year for the program as we initiated a rebrand to Illinois Rise, and sported our bread reversibles for the first time at T-Town Throwdown in Tuscaloosa. We found a lot of success, taking first place at T-Town and excited for the new year.</p>
-        <p>However, at our next premier tournament in California, Prez Day, we suffered badly through injuries and losses, coming to 17th place. The team wanted to prove themselves again at Centex 2020, but unfortunately, the start of the COVID-19 Pandemic put a short end to our college series.</p>
-        <p>With the start of the pandemic, many people were forced to go home. Reid Martin as captain kept involvement with the team high even through remote participation with workout plans and daily motivation with the goal to reach Nationals as a program </p>
-        `,
+          <p>Going into the 2019 season, Illinois Ultimate elected seniors Josh Deeman, Ben Sabourin, and sophomore Reid Martin as captains. DMac returned as head coach, with Eric Badger acting as both Boomland coach and assistant to the A team (as well as camera operator). </p> 
+          <p>After a fall season which included a first place finish at Stanley Cup, the roster was finalized. New faces to the team were: graduate students Gregory Schwarz and Nate Willis, juniors Lucas Gough and Brandon Carrel, sophomores Alex Liu and Aidan Levin, and freshman Daman Mulye. </p>
+          <p>The Spring season began with Illinois Ultimate’s first trip to Tuscaloosa, Alabama, for T-Town Throwdown. After going 2-2 in pool play, Illinois won a quarterfinals matchup against ISU on Sunday morning. In the following game, a rematch with Auburn, Illinois lost a close game 9-10. Illinois then took 3rd place overall with a victory against Kennesaw State. </p>
+          <p>Illinois then traveled to San Diego, California, for the Presidents’ Day Invite. Strong rains forced the competition onto a condensed field setup and abbreviated schedule. The team lost both games on Saturday, but won the following two games on Sunday. On Monday, Illinois beat UC Santa Barbara, but lost to Utah, taking 10th place in the process, and breaking seed. </p>
+          <p>The third tournament of the Spring was Centex, in Austin, TX. In the scorching heat, Illinois lost all power pool play games and their pre-quarterfinals matchup. On Sunday the team rebounded by beating UT Dallas and Texas A&M to capture 9th place. </p> 
+          <p>Huck Finn, the final tournament of the regular season, nearly didn’t take place, as Missouri experienced a deluge of snow. With the fields moved from St.Louis to Columbia, the tournament went ahead in difficult conditions. Saturday morning Illinois was welcomed to the fields by a blizzard. Fortunately, the team was used to Great Lakes conditions, and prevailed in all pool play games. The team then beat Carnegie Mellon and Texas Tech on Sunday morning, before falling to Michigan in the finals. </p>
+          <p>Sectionals, in lovely Rantoul, IL, began with Illinois taking the pool handily. On Sunday, Illinois was greeted with weather somehow worse than at Huck Finn. Illinois lost the final to Northwestern  on Sunday morning, after which the rest of the games that day were canceled. Illinois had to wait until the following week to beat DePaul and advance to Regionals in 2nd place. Rantoul blessed Illinois with incredible winds that day, resulting in <a href=https://www.reddit.com/r/ultimate/comments/bfgmrj/airbender_caught_on_film_illinois_vs_depaul/  target="_blank">Jacob Cuthbert completing one of the strangest swings anyone had ever seen.</a> </p>
+          <p>Regionals took place in Joliet, IL, allowing many family members and alumni to support the team on the sidelines. Illinois began the weekend with a strong victory against Loyola, and followed it up with two gritty wins against Indiana and Purdue. This set the team up with a semi-finals matchup with defending regional champions Michigan. In a tough battle, Illinois came up just short. The team took third place to end the season, and said farewell to a large class of 8 seniors. </p>
+          `
+    
+    ,
   },
   {
     year: 2018,
