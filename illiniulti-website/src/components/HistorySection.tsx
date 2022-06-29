@@ -5,10 +5,11 @@ import { useParams } from "react-router-dom";
 import { HISTORY_DATA } from "../data/history/history.data";
 
 function HistorySection() {
+  //params gets the year from the url from the router
   const params = useParams()
   const historyData = HISTORY_DATA;
   const element = historyData.find(data => data.year.toString() == params.historyId)
-  const isSmall = useMediaQuery("(min-width:1000px)");
+  const isBig = useMediaQuery("(min-width:1000px)");
 
   return (
     <Box sx={{
@@ -18,7 +19,7 @@ function HistorySection() {
       flexDirection: 'column'
     }}>
       <Typography variant="h2" m={1}>{element?.year}</Typography>
-      {isSmall?
+      {isBig?
         <Box component="img" sx={{ width: '75%'}} src={element?.image}/>
         : <Box component="img" sx={{ width: '100%'}} src={element?.image}/>
       }

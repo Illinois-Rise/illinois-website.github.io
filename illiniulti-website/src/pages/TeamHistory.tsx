@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Navigate, Outlet, useNavigate } from "react-router-dom";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
 import HistoryNav from "../components/HistoryNav";
 import { HISTORY_DATA } from "../data/history/history.data";
 function TeamHistory() {
-  //TODO: Navigate to most recent history page
+  const isSmall = useMediaQuery("(max-width:1000px)");
+
   const navigate = useNavigate()
-  const [recent, setRecent] = useState("")
   const shouldRedirect = true;
   useEffect(() => {
+    //One time direct to most recent year
     const historyData = HISTORY_DATA
     const years = historyData.map(data => {
       return data.year
@@ -21,12 +22,16 @@ function TeamHistory() {
       navigate(recent)
     }
   }, [])
+
+  useEffect(()=> {
+    console.log(isSmall)
+  })
   
  
   return (
     <Grid container>
-      <Grid item sm={2} />
-      <Grid item sm={8} justifyContent="center">
+      <Grid item sm={isSmall? 1 : 2} />
+      <Grid item sm={isSmall? 10: 8} justifyContent="center">
         <Typography variant="h2" align="center">
           Team History
         </Typography>
@@ -35,7 +40,7 @@ function TeamHistory() {
         </Box>
         <Outlet />
       </Grid>
-      <Grid item sm={2} />
+      <Grid item sm={isSmall? 1: 2} />
     </Grid>
   );
 }
