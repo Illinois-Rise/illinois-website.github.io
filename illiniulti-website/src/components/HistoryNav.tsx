@@ -69,13 +69,16 @@ function HistoryNav() {
 
   return (
     <>
-        {/*Tabs value is a filler value, doesn't do anything*/}
-      <Tabs centered={true} value={4}
+      {/*Tabs value is a filler value, doesn't do anything*/}
+      <Tabs
+        centered={true}
+        value={4}
         TabIndicatorProps={{
-            style: {
-                display: "none",
-            },
-        }}>
+          style: {
+            display: "none",
+          },
+        }}
+      >
         <Tab
           label="1978-1986"
           icon={<ArrowDropDown fontSize="small" />}

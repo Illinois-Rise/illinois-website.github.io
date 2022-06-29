@@ -1,6 +1,7 @@
 import { HistoryYear } from "./history.model";
 
-import { TeamPhoto1984,
+import {
+  TeamPhoto1984,
   TeamPhoto1985,
   TeamPhoto1986,
   TeamPhoto2008,
@@ -16,8 +17,9 @@ import { TeamPhoto1984,
   TeamPhoto2018,
   TeamPhoto2019,
   TeamPhoto2020,
-  TeamPhoto2021, 
-  TeamPhoto2022} from "../../images";
+  TeamPhoto2021,
+  TeamPhoto2022,
+} from "../../images";
 
 /*
 To add a photo to a HistoryYear entry, place the photo in the ./images/history/ folder
@@ -30,7 +32,7 @@ export const HISTORY_DATA: HistoryYear[] = [
     image: TeamPhoto2022,
     summaryMarkup: `
     2022 history
-    `
+    `,
   },
   {
     year: 2021,
@@ -63,9 +65,7 @@ export const HISTORY_DATA: HistoryYear[] = [
           <p>Huck Finn, the final tournament of the regular season, nearly didn’t take place, as Missouri experienced a deluge of snow. With the fields moved from St.Louis to Columbia, the tournament went ahead in difficult conditions. Saturday morning Illinois was welcomed to the fields by a blizzard. Fortunately, the team was used to Great Lakes conditions, and prevailed in all pool play games. The team then beat Carnegie Mellon and Texas Tech on Sunday morning, before falling to Michigan in the finals. </p>
           <p>Sectionals, in lovely Rantoul, IL, began with Illinois taking the pool handily. On Sunday, Illinois was greeted with weather somehow worse than at Huck Finn. Illinois lost the final to Northwestern  on Sunday morning, after which the rest of the games that day were canceled. Illinois had to wait until the following week to beat DePaul and advance to Regionals in 2nd place. Rantoul blessed Illinois with incredible winds that day, resulting in <a href=https://www.reddit.com/r/ultimate/comments/bfgmrj/airbender_caught_on_film_illinois_vs_depaul/  target="_blank">Jacob Cuthbert completing one of the strangest swings anyone had ever seen.</a> </p>
           <p>Regionals took place in Joliet, IL, allowing many family members and alumni to support the team on the sidelines. Illinois began the weekend with a strong victory against Loyola, and followed it up with two gritty wins against Indiana and Purdue. This set the team up with a semi-finals matchup with defending regional champions Michigan. In a tough battle, Illinois came up just short. The team took third place to end the season, and said farewell to a large class of 8 seniors. </p>
-          `
-    
-    ,
+          `,
   },
   {
     year: 2018,

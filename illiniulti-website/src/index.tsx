@@ -50,10 +50,10 @@ root.render(
           <Route path={PRACTICE} element={<Practice />} />
           <Route path={PROSPECTIVE_PLAYERS} element={<ProspectivePlayers />} />
           <Route path={ROSTER} element={<Roster />}>
-            <Route path=":rosterYear" element={<RosterSection/>}/>
-            </Route>
+            <Route path=":rosterYear" element={<RosterSection />} />
+          </Route>
           <Route path={TEAM_HISTORY} element={<TeamHistory />}>
-            <Route path=":historyId" element={<HistorySection/>}></Route>
+            <Route path=":historyId" element={<HistorySection />}></Route>
           </Route>
           <Route path={TOURNAMENTS} element={<Tournaments />} />
         </Route>

@@ -43,8 +43,22 @@ function HistoryYearMenu({
       }}
     >
       {dateStrings
-        ? dateStrings.map((year) => <MenuItem key={year} onClick={() => (handleNavClick(year.slice(0,4) + "/"))}>{year}</MenuItem>)
-        : years.map((year) => <MenuItem key={year} onClick={() => (handleNavClick(year.toString() + "/"))}>{year}</MenuItem>)}
+        ? dateStrings.map((year) => (
+            <MenuItem
+              key={year}
+              onClick={() => handleNavClick(year.slice(0, 4) + "/")}
+            >
+              {year}
+            </MenuItem>
+          ))
+        : years.map((year) => (
+            <MenuItem
+              key={year}
+              onClick={() => handleNavClick(year.toString() + "/")}
+            >
+              {year}
+            </MenuItem>
+          ))}
     </Menu>
   );
 }
