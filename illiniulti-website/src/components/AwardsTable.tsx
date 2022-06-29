@@ -1,5 +1,4 @@
 import {
-  Grid,
   Paper,
   Table,
   TableBody,

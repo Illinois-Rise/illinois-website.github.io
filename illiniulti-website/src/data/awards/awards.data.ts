@@ -1,5 +1,7 @@
 import { Award } from "./awards.model";
 
+
+//TODO: Make sure to update the national vs regional awards
 export const AWARDS_DATA: Award[] = [
   {
     year: 2021,

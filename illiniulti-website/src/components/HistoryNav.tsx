@@ -8,7 +8,6 @@ import { HISTORY_DATA } from "../data/history/history.data";
 
 function HistoryNav() {
   //use popover along with tabs to create dropdowns
-  //TODO: Make it responsive for mobile as well
   //This will be responsive to new data up until 2029, then you have to add a new tab
   //If this website is still on React by that time, I'll be really surprised
 

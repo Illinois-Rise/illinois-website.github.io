@@ -15,6 +15,7 @@ import PastResults from "./pages/PastResults";
 import Practice from "./pages/Practice";
 import ProspectivePlayers from "./pages/ProspectivePlayers";
 import Roster from "./pages/Roster";
+import RosterSection from "./components/RosterSection";
 import TeamHistory from "./pages/TeamHistory";
 import Tournaments from "./pages/Tournaments";
 import HistorySection from "./components/HistorySection";
@@ -48,7 +49,9 @@ root.render(
           <Route path={PAST_RESULTS} element={<PastResults />} />
           <Route path={PRACTICE} element={<Practice />} />
           <Route path={PROSPECTIVE_PLAYERS} element={<ProspectivePlayers />} />
-          <Route path={ROSTER} element={<Roster />} />
+          <Route path={ROSTER} element={<Roster />}>
+            <Route path=":rosterYear" element={<RosterSection/>}/>
+            </Route>
           <Route path={TEAM_HISTORY} element={<TeamHistory />}>
             <Route path=":historyId" element={<HistorySection/>}></Route>
           </Route>
