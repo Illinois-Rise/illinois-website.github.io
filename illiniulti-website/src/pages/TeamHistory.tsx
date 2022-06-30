@@ -27,6 +27,7 @@ function TeamHistory() {
     console.log(isSmall);
   });
 
+  //TODO: Also do the responsive mobile design for TeamHistory, maybe turn it into a component
   return (
     <Grid container>
       <Grid item sm={isSmall ? 1 : 2} />
