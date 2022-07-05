@@ -26,6 +26,8 @@ function Roster() {
       navigate(recent);
     }
   }, []);
+
+  //TODO: Refact Roster to Display Table
   return (
     <>
       {!isMobile ? (

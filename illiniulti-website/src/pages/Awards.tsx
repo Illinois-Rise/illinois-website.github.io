@@ -2,6 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import AwardsTable from "../components/AwardsTable";
+import DisplayTable from "../components/DisplayTable";
 import { AWARDS_DATA } from "../data/awards/awards.data";
 
 function Awards() {
