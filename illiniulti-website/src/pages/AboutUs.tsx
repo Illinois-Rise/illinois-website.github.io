@@ -2,11 +2,10 @@ import React from "react";
 
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import Sidebars from "../components/Sidebars";
 function AboutUs() {
   return (
-    <Grid container justifyContent="center" alignItems="center">
-      <Grid item xs={2}></Grid>
-      <Grid item xs={8} justifyContent="center">
+    <Sidebars>
         <Box p={1} m={1}>
           <Typography variant="h4" align="center">
             About Us
@@ -73,9 +72,7 @@ function AboutUs() {
             B team rosters as necessary.
           </p>
         </Box>
-      </Grid>
-      <Grid item xs={2}></Grid>
-    </Grid>
+   </Sidebars>
   );
 }
 

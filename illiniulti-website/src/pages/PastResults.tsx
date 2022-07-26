@@ -1,20 +1,17 @@
 import { Box, Grid, Typography } from "@mui/material";
 import ResultsTable from "../components/ResultsTable";
+import Sidebars from "../components/Sidebars";
 
 function PastResults() {
   return (
-    <Grid container>
-      <Grid item sm={2} />
-      <Grid item sm={8} justifyContent="center">
+    <Sidebars>
         <Typography variant="h2" align="center">
           Results
         </Typography>
         <Box m={1}>
           <ResultsTable />
         </Box>
-      </Grid>
-      <Grid item sm={2} />
-    </Grid>
+    </Sidebars>
   );
 }
 

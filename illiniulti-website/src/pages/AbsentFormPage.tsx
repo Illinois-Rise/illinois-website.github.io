@@ -4,6 +4,7 @@ import { FormInputText } from "../components/FormInputText";
 import { useForm } from "react-hook-form";
 import FormMessage from "../components/FormMessage";
 import { addAbsent } from "../api/AbsentForm";
+import Sidebars from "../components/Sidebars";
 
 function AbsentFormPage() {
   const [success, setSuccess] = useState(false);
@@ -38,15 +39,8 @@ function AbsentFormPage() {
     console.log(errors);
   };
   return (
-    <Grid
-      container
-      sx={{
-        "& .MuiTextField-root": { m: 1, width: "80%" },
-      }}
-    >
-      <Grid item sm={2} />
-      <Grid item sm={8} justifyContent="center" alignItems="center'">
-        <Typography variant="h2">Practice Absence Form</Typography>
+    <Sidebars>
+      <Typography variant="h2">Practice Absence Form</Typography>
         <form onSubmit={handleSubmit(onFormSubmit, onError)}>
           <FormInputText
             name={"firstname"}
@@ -90,9 +84,7 @@ function AbsentFormPage() {
             ></FormMessage>
           )}
         </form>
-      </Grid>
-      <Grid item sm={2} />
-    </Grid>
+    </Sidebars>
   );
 }
 

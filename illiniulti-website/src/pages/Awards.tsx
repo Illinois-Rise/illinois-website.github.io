@@ -2,12 +2,11 @@ import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import AwardsTable from "../components/AwardsTable";
+import Sidebars from "../components/Sidebars";
 
 function Awards() {
   return (
-    <Grid container>
-      <Grid item sm={2} />
-      <Grid item sm={8} justifyContent="center">
+    <Sidebars>
         <Typography variant="h2" align="center">
           Awards
         </Typography>
@@ -23,9 +22,7 @@ function Awards() {
         <Box padding={1}>*COTY (Coach of the Year) added in 2009</Box>
         <Box padding={1}>*2nd-Team All Region added in 2009</Box>
         <Box padding={1}>*Awards first given out in 2002</Box>
-      </Grid>
-      <Grid item sm={2} />
-    </Grid>
+    </Sidebars>
   );
 }
 

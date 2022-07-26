@@ -2,21 +2,25 @@ import { Tabs, Tab } from "@mui/material";
 import { useState } from "react";
 import { To, useNavigate } from "react-router-dom";
 import { ROSTER_DATA } from "../data/roster/roster.data";
-function RosterNav() {
-  //since the ROSTER_DATA goes from recent to old, have to reverse for map to order in ascending order
-  //creates a shallow copy using slice()
-  const reverseYears = ROSTER_DATA.slice(0).reverse();
+import { RosterYear } from "../data/roster/roster.model";
+import { TournamentYear } from "../data/tournaments/tournament.model";
+interface YearNavProps{
+  years: RosterYear[]|TournamentYear[]
+}
+function YearNav({years}: YearNavProps) {
+
+  const data = years
   const navigate = useNavigate();
 
-  const [tabValue, setTabValue] = useState(reverseYears.length - 1);
+  const [tabValue, setTabValue] = useState(data.length - 1);
   const onYearClick = (year: number) => {
-    setTabValue(reverseYears.findIndex((element) => element.year === year));
+    setTabValue(data.findIndex((element) => element.year === year));
     navigate(year.toString());
   };
 
   return (
     <Tabs value={tabValue} variant="scrollable">
-      {reverseYears.map((row, index) => (
+      {data.map((row, index) => (
         <Tab
           label={row.year}
           value={index}
@@ -27,4 +31,4 @@ function RosterNav() {
   );
 }
 
-export default RosterNav;
+export default YearNav;

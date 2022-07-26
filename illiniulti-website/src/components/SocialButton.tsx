@@ -1,4 +1,4 @@
-import { Avatar, Button, IconButton } from "@mui/material"
+import { Avatar, Box, IconButton } from "@mui/material"
 
 
 interface SocialButtonProps{
@@ -8,9 +8,13 @@ interface SocialButtonProps{
 function SocialButton({image, link}: SocialButtonProps) {
 
     return (
+        <Box>
+
+        
         <IconButton href={link} target="_blank" rel="noreferrer">
             <Avatar src={image}/>
         </IconButton>
+        </Box>
         
     )
 }

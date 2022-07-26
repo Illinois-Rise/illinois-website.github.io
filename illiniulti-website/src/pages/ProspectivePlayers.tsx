@@ -14,6 +14,7 @@ import { Controller, useForm } from "react-hook-form";
 import { FormInputText } from "../components/FormInputText";
 import FormMessage from "../components/FormMessage";
 import { addProspective } from "../api/ProspectivePlayers";
+import Sidebars from "../components/Sidebars";
 
 function ProspectivePlayers() {
   const {
@@ -51,10 +52,7 @@ function ProspectivePlayers() {
   //TODO: Connect with Google Sheets
 
   return (
-    <>
-      <Grid container>
-        <Grid item sm={2} />
-        <Grid item sm={8} justifyContent="center">
+      <Sidebars>
           <Typography variant="h2" align="center">
             Prospective Players
           </Typography>
@@ -226,10 +224,7 @@ function ProspectivePlayers() {
               </form>
             </Box>
           </Box>
-        </Grid>
-        <Grid item sm={2} />
-      </Grid>
-    </>
+      </Sidebars>
   );
 }
 

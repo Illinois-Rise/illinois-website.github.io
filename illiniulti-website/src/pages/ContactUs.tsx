@@ -1,8 +1,9 @@
 import React from "react";
+import Sidebars from "../components/Sidebars";
 
 function ContactUs() {
   return (
-    <>
+    <Sidebars>
       <h1 className="ui header">Contact Us</h1>
       <p>
         For any communication directed at the entire program, particularly
@@ -27,7 +28,7 @@ function ContactUs() {
       <p className="captain">
         <a href="mailto: kostasa2@illinois.edu">Eli Artemakis</a>
       </p>
-    </>
+    </Sidebars>
   );
 }
 

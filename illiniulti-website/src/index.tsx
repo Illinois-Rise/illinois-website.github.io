@@ -33,6 +33,7 @@ import {
   TEAM_HISTORY,
   TOURNAMENTS,
 } from "./constants/Routes";
+import TournamentSection from "./components/TournamentSection";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -55,7 +56,9 @@ root.render(
           <Route path={TEAM_HISTORY} element={<TeamHistory />}>
             <Route path=":historyId" element={<HistorySection />}></Route>
           </Route>
-          <Route path={TOURNAMENTS} element={<Tournaments />} />
+          <Route path={TOURNAMENTS} element={<Tournaments />}>
+          <Route path=":tournamentYear" element={<TournamentSection />}></Route>
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

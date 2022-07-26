@@ -11,8 +11,6 @@ function App() {
       {
         //TODO: Need to center all the stuff
         //TODO: Need to style everything
-        //TODO: Twitter, socials
-        //TODO: Paypal donor
         //TODO: Create Footer
         //Prettier Everything: ./node_modules/.bin/prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
       }
