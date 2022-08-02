@@ -37,7 +37,7 @@ function Roster() {
   }, []);
 
   return (
-    <Sidebars>
+    <>
         <Box>
           <Typography variant="h2" align="center">
             Roster
@@ -47,7 +47,7 @@ function Roster() {
           </Box>
           <Outlet />
         </Box>
-    </Sidebars>
+    </>
   );
 }
 

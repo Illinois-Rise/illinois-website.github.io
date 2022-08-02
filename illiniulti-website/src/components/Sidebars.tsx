@@ -1,6 +1,6 @@
 //This is the Grid system that contains the twitter and socials
 //Is responsive so disappears if too small
-import { Box, Grid, Paper, Typography } from "@mui/material"
+import { Box, Grid, Paper, Typography, useMediaQuery } from "@mui/material"
 import { Timeline } from "react-twitter-widgets"
 import { instagramButton, twitterButton, emailButton, paypalDonate } from "../iconButtons";
 import SocialButton from "../components/SocialButton";
@@ -11,9 +11,11 @@ interface SidebarsProps {
 function Sidebars({children}: SidebarsProps) {
     //TODO: Make Twitter Timeline responsive by adding mediaqueries
     //TODO: Make the grids disappear if the screen is too small
-    return(
-    <Grid container>
-      <Grid item sm={3} sx={{justifyContent:"center"}}>
+    //TODO: Put this component on the outside so that Twitter isn't constantly reloading
+    const isBig = useMediaQuery("(min-width:800px)");
+    return (
+      <Grid container>
+        {isBig ? <Grid item sm={3} sx={{justifyContent:"center"}}>
         <Box sx={{p: 3}} >
           <Timeline
             dataSource={{
@@ -27,10 +29,12 @@ function Sidebars({children}: SidebarsProps) {
           />
         </Box>
       </Grid>
-      <Grid item sm={6} justifyContent="center">
+      : <></>}
+      
+      <Grid item sm={isBig? 6 : 12} justifyContent="center">
         {children}   
       </Grid>
-      <Grid item sm={3}>
+      {isBig ? <Grid item sm={3}>
       <Box p={2} sx={{
         display: "flex",
         flexDirection: "column",
@@ -62,7 +66,11 @@ function Sidebars({children}: SidebarsProps) {
             </Paper>
         </Box>
       </Grid>
+      : <></>}
+      
     </Grid>
+      
+    
     )
 }
 export default Sidebars

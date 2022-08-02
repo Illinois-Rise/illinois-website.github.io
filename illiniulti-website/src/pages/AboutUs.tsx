@@ -5,7 +5,7 @@ import { Box } from "@mui/system";
 import Sidebars from "../components/Sidebars";
 function AboutUs() {
   return (
-    <Sidebars>
+    <>
         <Box p={1} m={1}>
           <Typography variant="h4" align="center">
             About Us
@@ -72,7 +72,7 @@ function AboutUs() {
             B team rosters as necessary.
           </p>
         </Box>
-   </Sidebars>
+    </>
   );
 }
 

@@ -52,7 +52,7 @@ function ProspectivePlayers() {
   //TODO: Connect with Google Sheets
 
   return (
-      <Sidebars>
+      <>
           <Typography variant="h2" align="center">
             Prospective Players
           </Typography>
@@ -224,7 +224,7 @@ function ProspectivePlayers() {
               </form>
             </Box>
           </Box>
-      </Sidebars>
+      </>
   );
 }
 

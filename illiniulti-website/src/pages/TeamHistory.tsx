@@ -33,7 +33,7 @@ function TeamHistory() {
 
   //TODO: Also do the responsive mobile design for TeamHistory, maybe turn it into a component
   return (
-    <Sidebars>
+    <>
       <Typography variant="h2" align="center">
         Team History
       </Typography>
@@ -41,7 +41,7 @@ function TeamHistory() {
         <HistoryNav></HistoryNav>
       </Box>
       <Outlet />
-    </Sidebars>
+    </>
   );
 }
 

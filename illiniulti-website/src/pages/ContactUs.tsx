@@ -3,7 +3,7 @@ import Sidebars from "../components/Sidebars";
 
 function ContactUs() {
   return (
-    <Sidebars>
+    <>
       <h1 className="ui header">Contact Us</h1>
       <p>
         For any communication directed at the entire program, particularly
@@ -20,15 +20,15 @@ function ContactUs() {
       </p>
 
       <p className="captain">
-        <a href="mailto: pmd3@illinois.edu">Patrick Driscoll</a>
+        <a href="mailto: pmd3@illinois.edu">Patrick Driscoll (pmd3@illinois.edu)</a>
       </p>
       <p className="captain">
-        <a href="mailto: kjzhou2@illinois.edu">Kevin Zhou</a>
+        <a href="mailto: kjzhou2@illinois.edu">Kevin Zhou (kjzhou2@illinois.edu)</a>
       </p>
       <p className="captain">
-        <a href="mailto: kostasa2@illinois.edu">Eli Artemakis</a>
+        <a href="mailto: kostasa2@illinois.edu">Eli Artemakis (kostasa2@illinois.edu)</a>
       </p>
-    </Sidebars>
+    </>
   );
 }
 

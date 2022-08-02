@@ -30,7 +30,7 @@ function Tournaments() {
   
   return (
     
-    <Sidebars>
+    <>
       <Box>
           <Typography variant="h2" align="center">
             Tournaments
@@ -43,7 +43,7 @@ function Tournaments() {
             * Indicates bracket play not completed due to inclement weather (2019)
           </Typography>
       </Box>
-    </Sidebars>
+    </>
   )
 }
 

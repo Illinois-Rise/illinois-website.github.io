@@ -15,7 +15,7 @@ function Home() {
   //800 is where it starts to creep into the tweets
   //TODO: Center the donate button and probably put it in a Paper
   return (
-    <Sidebars>
+    <>
         <Box
           sx={{
             width: "100%",
@@ -36,7 +36,7 @@ function Home() {
             ))}
           </Fade>
         </Box>
-    </Sidebars>
+    </>
 
   );
 }

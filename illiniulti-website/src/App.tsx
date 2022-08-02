@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import { Link, Outlet } from "react-router-dom";
 import "./App.css";
 import { Grid } from "@mui/material";
+import Sidebars from "./components/Sidebars";
 
 function App() {
   return (
@@ -22,8 +23,10 @@ function App() {
           <NavBar />
         </Grid>
       </Grid>
-
-      <Outlet />
+      <Sidebars>
+        <Outlet />
+      </Sidebars>
+      
     </div>
   );
 }

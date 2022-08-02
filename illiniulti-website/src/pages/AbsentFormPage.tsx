@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { FormInputText } from "../components/FormInputText";
 import { useForm } from "react-hook-form";
@@ -39,8 +39,15 @@ function AbsentFormPage() {
     console.log(errors);
   };
   return (
-    <Sidebars>
-      <Typography variant="h2">Practice Absence Form</Typography>
+    <>
+      <Typography align="center" variant="h2">Practice Absence Form</Typography>
+        <Box
+          display="flex"
+          sx={{
+            "& .MuiTextField-root": { m: 1, width: "95%" },
+            alignItems: "center"
+          }}
+        >
         <form onSubmit={handleSubmit(onFormSubmit, onError)}>
           <FormInputText
             name={"firstname"}
@@ -76,6 +83,7 @@ function AbsentFormPage() {
             label={"Practice Date"}
             rules={formOptions.date}
           />
+          <Box m={1}>
           <input type="submit"></input>
           {success && (
             <FormMessage
@@ -83,8 +91,10 @@ function AbsentFormPage() {
               isFailure={false}
             ></FormMessage>
           )}
+          </Box>
         </form>
-    </Sidebars>
+        </Box>
+    </>
   );
 }
 
