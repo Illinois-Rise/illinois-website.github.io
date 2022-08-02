@@ -29,27 +29,30 @@ function ProspectivePlayers() {
     lastname: { required: "Last Name is required" },
     email: { required: "Email is required" },
     hometown: { required: "Hometown is required" },
-    highschool: { required: "High School is required" },
+    highschool: { required: "Hometown is required" },
     major: { required: "Major is required (say Undecided if you don't know)" },
     experience: { required: "Tell us something about your experience!" },
     clubs: { required: "Say No if there are no clubs you plan to join" },
   };
   const onFormSubmit = async (data: any) => {
-    data = { timestamp: new Date(), ...data };
-    console.log(data);
-    setSuccess(true);
+    setSuccess(false)
+    const date = new Date()
+    data = { Timestamp: date.toDateString() + " " +date.toLocaleTimeString(), ...data };
+    console.log(JSON.stringify(data));
+    const jsonData = JSON.stringify(data);
+    
     //Cannot access the heroku server atm because of CORS, waiting on Nick
-    //TODO: Add timestamp and test whether it actually sends it to the server
-    const successfulSubmit = await addProspective(data);
+    //TODO: Add timestamp and test whether it actually sends it to the server'
+
+    const successfulSubmit = await addProspective(jsonData);
     if (successfulSubmit) {
-      //setSuccess(true)
+      setSuccess(true);
     }
   };
 
   const onError = (errors: any) => {
     console.log(errors);
   };
-  //TODO: Connect with Google Sheets
 
   return (
       <>
@@ -128,49 +131,49 @@ function ProspectivePlayers() {
             >
               <form onSubmit={handleSubmit(onFormSubmit, onError)}>
                 <FormInputText
-                  name={"firstName"}
+                  name={"First Name"}
                   control={control}
                   label={"First Name"}
                   rules={formOptions.firstname}
                 />
 
                 <FormInputText
-                  name={"lastName"}
+                  name={"Last Name"}
                   control={control}
                   label={"Last Name"}
                   rules={formOptions.lastname}
                 />
 
                 <FormInputText
-                  name={"email"}
+                  name={"Email Address"}
                   control={control}
                   label={"Email"}
                   rules={formOptions.email}
                 />
 
                 <FormInputText
-                  name={"hometown"}
+                  name={"Hometown"}
                   control={control}
                   label={"Hometown"}
                   rules={formOptions.hometown}
                 />
 
                 <FormInputText
-                  name={"highschool"}
+                  name={"High School"}
                   control={control}
                   label={"High School Attended"}
                   rules={formOptions.highschool}
                 />
 
                 <FormInputText
-                  name={"major"}
+                  name={"Major"}
                   control={control}
                   label={"Planned Major"}
                   rules={formOptions.major}
                 />
 
                 <FormInputText
-                  name={"experience"}
+                  name={"Experience"}
                   control={control}
                   label={"Ultimate Frisbee Experience"}
                   multiline={true}
@@ -178,7 +181,7 @@ function ProspectivePlayers() {
                 />
 
                 <FormInputText
-                  name={"clubs"}
+                  name={"Other Clubs"}
                   control={control}
                   label={"Are there any other clubs you plan to join?"}
                   multiline={true}
@@ -189,7 +192,7 @@ function ProspectivePlayers() {
                   you? *
                 </Typography>
                 <Controller
-                  name={"contact"}
+                  name={"Contact Me"}
                   control={control}
                   defaultValue={"Yes"}
                   render={({ field: { onChange, value } }) => (

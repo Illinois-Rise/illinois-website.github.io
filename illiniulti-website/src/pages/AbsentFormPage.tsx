@@ -9,6 +9,8 @@ import Sidebars from "../components/Sidebars";
 function AbsentFormPage() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const {
     handleSubmit,
     control,
@@ -24,19 +26,21 @@ function AbsentFormPage() {
   };
 
   const onFormSubmit = async (data: any) => {
-    data = { timestamp: new Date(), ...data };
-    console.log(data);
-    setSuccess(true);
-    //Cannot access the heroku server atm because of CORS, waiting on Nick
-    //TODO: Add timestamp and test whether it actually sends it to the server
-    const successfulSubmit = await addAbsent(data);
+    setSuccess(false);
+    setLoading(true);
+    const date = new Date()
+    data = { Timestamp: date.toDateString() + " " +date.toLocaleTimeString(), ...data };
+    console.log(JSON.stringify(data));
+    const jsonData = JSON.stringify(data);
+    const successfulSubmit = await addAbsent(jsonData);
     if (successfulSubmit) {
+      setLoading(false);
       setSuccess(true);
     }
   };
   const onError = (errors: any) => {
     setError(true);
-    console.log(errors);
+    setErrorMsg(errors)
   };
   return (
     <>
@@ -50,45 +54,57 @@ function AbsentFormPage() {
         >
         <form onSubmit={handleSubmit(onFormSubmit, onError)}>
           <FormInputText
-            name={"firstname"}
+            name={"First Name"}
             control={control}
             label={"First Name"}
             rules={formOptions.firstname}
           />
 
           <FormInputText
-            name={"lastname"}
+            name={"Last Name"}
             control={control}
             label={"Last Name"}
             rules={formOptions.lastname}
           />
 
           <FormInputText
-            name={"reason"}
+            name={"Reason"}
             control={control}
             label={"Reason for missing or being late to Practice"}
             rules={formOptions.reason}
           />
 
           <FormInputText
-            name={"time"}
+            name={"Time"}
             control={control}
             label={"From what time to what time is your conflict?"}
             rules={formOptions.time}
           />
 
           <FormInputText
-            name={"date"}
+            name={"Date"}
             control={control}
             label={"Practice Date"}
             rules={formOptions.date}
           />
           <Box m={1}>
           <input type="submit"></input>
+          {loading && (
+            <FormMessage
+            message="Sending..."
+            isFailure={false}
+          ></FormMessage>
+          )}
           {success && (
             <FormMessage
               message="Form Sent. Stop Missing Practice."
               isFailure={false}
+            ></FormMessage>
+          )}
+          {error && (
+            <FormMessage
+              message={"error: contact admin " + errorMsg}
+              isFailure={true}
             ></FormMessage>
           )}
           </Box>
