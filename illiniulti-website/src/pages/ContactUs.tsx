@@ -1,9 +1,10 @@
+import { Box } from "@mui/material";
 import React from "react";
 import Sidebars from "../components/Sidebars";
 
 function ContactUs() {
   return (
-    <>
+    <Box m={1}>
       <h1 className="ui header">Contact Us</h1>
       <p>
         For any communication directed at the entire program, particularly
@@ -28,7 +29,7 @@ function ContactUs() {
       <p className="captain">
         <a href="mailto: kostasa2@illinois.edu">Eli Artemakis (kostasa2@illinois.edu)</a>
       </p>
-    </>
+    </Box>
   );
 }
 

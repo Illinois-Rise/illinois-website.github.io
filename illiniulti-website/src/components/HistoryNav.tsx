@@ -10,7 +10,8 @@ function HistoryNav() {
   //use popover along with tabs to create dropdowns
   //This will be responsive to new data up until 2029, then you have to add a new tab
   //If this website is still on React by that time, I'll be really surprised
-
+  const CURRENT_YEAR_RANGE = 4; //2020-
+  const [selectedTab, setSelectedTab] = useState(CURRENT_YEAR_RANGE);
   const [anchor78_86, setAnchor78_86] = useState<null | HTMLElement>(null);
   const [open78_86, setOpen78_86] = useState(false);
   const [anchor94_99, setAnchor94_99] = useState<null | HTMLElement>(null);
@@ -25,22 +26,27 @@ function HistoryNav() {
   const dropdown78_86Click = (event: React.MouseEvent<HTMLElement>) => {
     setOpen78_86(!open78_86);
     setAnchor78_86(event.currentTarget);
+    setSelectedTab(0);
   };
   const dropdown94_99Click = (event: React.MouseEvent<HTMLElement>) => {
     setOpen94_99(!open94_99);
     setAnchor94_99(event.currentTarget);
+    setSelectedTab(1);
   };
   const dropdown00_09Click = (event: React.MouseEvent<HTMLElement>) => {
     setOpen00_09(!open00_09);
     setAnchor00_09(event.currentTarget);
+    setSelectedTab(2);
   };
   const dropdown10_19Click = (event: React.MouseEvent<HTMLElement>) => {
     setOpen10_19(!open10_19);
     setAnchor10_19(event.currentTarget);
+    setSelectedTab(3);
   };
   const dropdown20_29Click = (event: React.MouseEvent<HTMLElement>) => {
     setOpen20_29(!open20_29);
     setAnchor20_29(event.currentTarget);
+    setSelectedTab(4);
   };
 
   const handleClose = () => {
@@ -69,10 +75,9 @@ function HistoryNav() {
 
   return (
     <>
-      {/*Tabs value is a filler value, doesn't do anything*/}
       <Tabs
         centered={true}
-        value={4}
+        value={selectedTab}
         TabIndicatorProps={{
           style: {
             display: "none",

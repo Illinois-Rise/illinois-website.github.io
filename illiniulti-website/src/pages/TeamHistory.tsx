@@ -24,14 +24,6 @@ function TeamHistory() {
     }
   }, []);
 
-  // useEffect(() => {
-  //   console.log(isSmall);
-  // });
-  // <Grid container>
-  //     <Grid item sm={isSmall ? 1 : 2} />
-  //     <Grid item sm={isSmall ? 10 : 8} justifyContent="center">
-
-  //TODO: Also do the responsive mobile design for TeamHistory, maybe turn it into a component
   return (
     <>
       <Typography variant="h2" align="center">

@@ -5,14 +5,13 @@ import { Link, Outlet } from "react-router-dom";
 import "./App.css";
 import { Grid } from "@mui/material";
 import Sidebars from "./components/Sidebars";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       {
-        //TODO: Need to center all the stuff
         //TODO: Need to style everything
-        //TODO: Create Footer
         //Prettier Everything: ./node_modules/.bin/prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
       }
       <Grid container alignItems="center">
@@ -26,7 +25,7 @@ function App() {
       <Sidebars>
         <Outlet />
       </Sidebars>
-      
+      <Footer/>
     </div>
   );
 }

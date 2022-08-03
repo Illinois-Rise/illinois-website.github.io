@@ -1,6 +1,4 @@
 import * as React from "react";
-// import './Header.css';
-// TODO: make background light green or light red depending on isFailure
 import { Card, CardContent, Grid, Typography } from "@mui/material";
 
 interface FormMessageProps {
@@ -18,12 +16,13 @@ function FormMessage({ message, isFailure }: FormMessageProps) {
             p: -1,
             justifyContent: "center",
             alignItems: "center",
+            backgroundColor: isFailure ? "error.light" : "success.light"
           }}
         >
           <CardContent>
             <Typography
               sx={
-                isFailure ? { color: "error.main" } : { color: "success.main" }
+                isFailure ? { color: "error.main" } : { color: "success.dark" }
               }
             >
               {message}

@@ -1,22 +1,29 @@
 import * as React from "react";
-// import './Header.css';
-import { Box, AppBar } from "@mui/material";
+import "../styles/Header.css"
+import { Box, Paper, useMediaQuery } from "@mui/material";
 import { Typography } from "@mui/material";
 import RisePhoenix from "../images/RisePhoenix.png";
+import { HeaderBackground } from "../images";
+
 function Header() {
+  const isSmall = useMediaQuery("(min-width:575px)");
   return (
-    <Box sx={{ display: "flex" }} justifyContent="center">
-      {
-        //The image is not flexible
-      }
-      <img
-        src={RisePhoenix}
-        alt="Illinois Rise Phoenix Logo"
-        className="Logo"
-        height="90px"
-      ></img>
-      <Typography variant="h1">Illinois Rise</Typography>
+    <Paper square={true} sx={{
+      backgroundImage: `url(${HeaderBackground})`,
+      width: "100%"}}>
+    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
+      {isSmall ? <img
+          src={RisePhoenix}
+          alt="Illinois Rise Phoenix Logo"
+          className="Logo"
+          height="90px"
+        ></img>
+      : <></>}
+        
+      <Typography align="center" className="header" >ILLINOIS RISE</Typography>
+      
     </Box>
+    </Paper>
   );
 }
 

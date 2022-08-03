@@ -12,8 +12,6 @@ const { Fade } = reactslideshowimage;
 
 const images = [IU_Home1, IU_Home2, IU_Home3, IU_Home4, IU_Home5];
 function Home() {
-  //800 is where it starts to creep into the tweets
-  //TODO: Center the donate button and probably put it in a Paper
   return (
     <>
         <Box

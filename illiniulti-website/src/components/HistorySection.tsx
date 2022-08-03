@@ -21,6 +21,7 @@ function HistorySection() {
         alignItems: "center",
         flexDirection: "column",
       }}
+      m={1}
     >
       <Typography variant="h2" m={1}>
         {element?.year}

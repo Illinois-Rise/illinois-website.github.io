@@ -40,9 +40,6 @@ function ProspectivePlayers() {
     data = { Timestamp: date.toDateString() + " " +date.toLocaleTimeString(), ...data };
     console.log(JSON.stringify(data));
     const jsonData = JSON.stringify(data);
-    
-    //Cannot access the heroku server atm because of CORS, waiting on Nick
-    //TODO: Add timestamp and test whether it actually sends it to the server'
 
     const successfulSubmit = await addProspective(jsonData);
     if (successfulSubmit) {
