@@ -13,14 +13,14 @@ function Roster() {
   const shouldRedirect = true;
   //since the ROSTER_DATA goes from recent to old, have to reverse for map to order in ascending order
   //creates a shallow copy using slice()
-    //setting data instead of using useState since state has a possible type of undefined, hard to work with
-    //And don't need to constantly be updating roster data on each rerender
+  //setting data instead of using useState since state has a possible type of undefined, hard to work with
+  //And don't need to constantly be updating roster data on each rerender
   const reverseYears = ROSTER_DATA.slice(0).reverse();
   const isSmall = useMediaQuery("(max-width:1000px)");
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   useEffect(() => {
     //One time direct to most recent year
-    
+
     const rosterData = ROSTER_DATA;
     const years = rosterData.map((data) => {
       return data.year;
@@ -29,24 +29,23 @@ function Roster() {
 
     const recent = Math.max(...years).toString();
     console.log(recent);
-    
+
     if (shouldRedirect) {
       navigate(recent);
     }
-    
   }, []);
 
   return (
     <>
-        <Box>
-          <Typography variant="h2" align="center">
-            Roster
-          </Typography>
-          <Box alignContent="center">
-            <YearNav years={reverseYears}/>
-          </Box>
-          <Outlet />
+      <Box>
+        <Typography variant="h2" align="center">
+          Roster
+        </Typography>
+        <Box alignContent="center">
+          <YearNav years={reverseYears} />
         </Box>
+        <Outlet />
+      </Box>
     </>
   );
 }

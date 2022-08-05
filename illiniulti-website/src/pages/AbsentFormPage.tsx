@@ -28,8 +28,11 @@ function AbsentFormPage() {
   const onFormSubmit = async (data: any) => {
     setSuccess(false);
     setLoading(true);
-    const date = new Date()
-    data = { Timestamp: date.toDateString() + " " +date.toLocaleTimeString(), ...data };
+    const date = new Date();
+    data = {
+      Timestamp: date.toDateString() + " " + date.toLocaleTimeString(),
+      ...data,
+    };
     console.log(JSON.stringify(data));
     const jsonData = JSON.stringify(data);
     const successfulSubmit = await addAbsent(jsonData);
@@ -40,18 +43,20 @@ function AbsentFormPage() {
   };
   const onError = (errors: any) => {
     setError(true);
-    setErrorMsg(errors)
+    setErrorMsg(errors);
   };
   return (
     <>
-      <Typography align="center" variant="h2">Practice Absence Form</Typography>
-        <Box
-          display="flex"
-          sx={{
-            "& .MuiTextField-root": { m: 1, width: "95%" },
-            alignItems: "center"
-          }}
-        >
+      <Typography align="center" variant="h2">
+        Practice Absence Form
+      </Typography>
+      <Box
+        display="flex"
+        sx={{
+          "& .MuiTextField-root": { m: 1, width: "95%" },
+          alignItems: "center",
+        }}
+      >
         <form onSubmit={handleSubmit(onFormSubmit, onError)}>
           <FormInputText
             name={"First Name"}
@@ -88,28 +93,25 @@ function AbsentFormPage() {
             rules={formOptions.date}
           />
           <Box m={1}>
-          <input type="submit"></input>
-          {loading && (
-            <FormMessage
-            message="Sending..."
-            isFailure={false}
-          ></FormMessage>
-          )}
-          {success && (
-            <FormMessage
-              message="Form Sent. Stop Missing Practice."
-              isFailure={false}
-            ></FormMessage>
-          )}
-          {error && (
-            <FormMessage
-              message={"error: contact admin " + errorMsg}
-              isFailure={true}
-            ></FormMessage>
-          )}
+            <input type="submit"></input>
+            {loading && (
+              <FormMessage message="Sending..." isFailure={false}></FormMessage>
+            )}
+            {success && (
+              <FormMessage
+                message="Form Sent. Stop Missing Practice."
+                isFailure={false}
+              ></FormMessage>
+            )}
+            {error && (
+              <FormMessage
+                message={"error: contact admin " + errorMsg}
+                isFailure={true}
+              ></FormMessage>
+            )}
           </Box>
         </form>
-        </Box>
+      </Box>
     </>
   );
 }

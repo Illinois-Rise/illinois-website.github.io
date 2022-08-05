@@ -16,7 +16,7 @@ function FormMessage({ message, isFailure }: FormMessageProps) {
             p: -1,
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: isFailure ? "error.light" : "success.light"
+            backgroundColor: isFailure ? "error.light" : "success.light",
           }}
         >
           <CardContent>

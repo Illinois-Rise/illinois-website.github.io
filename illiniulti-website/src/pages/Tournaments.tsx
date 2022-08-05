@@ -12,7 +12,7 @@ function Tournaments() {
   const reverseYears = TOURNAMENTS_DATA.slice(0).reverse();
   useEffect(() => {
     //One time direct to most recent year
-    
+
     const rosterData = TOURNAMENTS_DATA;
     const years = rosterData.map((data) => {
       return data.year;
@@ -21,30 +21,28 @@ function Tournaments() {
 
     const recent = Math.max(...years).toString();
     console.log(recent);
-    
+
     if (shouldRedirect) {
       navigate(recent);
     }
-    
   }, []);
-  
+
   return (
-    
     <>
       <Box>
-          <Typography variant="h2" align="center">
-            Tournaments
-          </Typography>
-          <Box alignContent="center">
-            <YearNav years={reverseYears}/>
-          </Box>
-          <Outlet />
-          <Typography m={1} variant="body1">
-            * Indicates bracket play not completed due to inclement weather (2019)
-          </Typography>
+        <Typography variant="h2" align="center">
+          Tournaments
+        </Typography>
+        <Box alignContent="center">
+          <YearNav years={reverseYears} />
+        </Box>
+        <Outlet />
+        <Typography m={1} variant="body1">
+          * Indicates bracket play not completed due to inclement weather (2019)
+        </Typography>
       </Box>
     </>
-  )
+  );
 }
 
 export default Tournaments;

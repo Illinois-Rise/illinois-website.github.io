@@ -57,7 +57,10 @@ root.render(
             <Route path=":historyId" element={<HistorySection />}></Route>
           </Route>
           <Route path={TOURNAMENTS} element={<Tournaments />}>
-          <Route path=":tournamentYear" element={<TournamentSection />}></Route>
+            <Route
+              path=":tournamentYear"
+              element={<TournamentSection />}
+            ></Route>
           </Route>
         </Route>
       </Routes>

@@ -5,7 +5,7 @@ import Sidebars from "../components/Sidebars";
 function ContactUs() {
   return (
     <Box m={1}>
-      <h1 className="ui header">Contact Us</h1>
+      <h1>Contact Us</h1>
       <p>
         For any communication directed at the entire program, particularly
         information regarding tournaments, please contact us at this email:
@@ -21,13 +21,19 @@ function ContactUs() {
       </p>
 
       <p className="captain">
-        <a href="mailto: pmd3@illinois.edu">Patrick Driscoll (pmd3@illinois.edu)</a>
+        <a href="mailto: pmd3@illinois.edu">
+          Patrick Driscoll (pmd3@illinois.edu)
+        </a>
       </p>
       <p className="captain">
-        <a href="mailto: kjzhou2@illinois.edu">Kevin Zhou (kjzhou2@illinois.edu)</a>
+        <a href="mailto: kjzhou2@illinois.edu">
+          Kevin Zhou (kjzhou2@illinois.edu)
+        </a>
       </p>
       <p className="captain">
-        <a href="mailto: kostasa2@illinois.edu">Eli Artemakis (kostasa2@illinois.edu)</a>
+        <a href="mailto: kostasa2@illinois.edu">
+          Eli Artemakis (kostasa2@illinois.edu)
+        </a>
       </p>
     </Box>
   );

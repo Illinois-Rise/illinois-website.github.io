@@ -1,7 +1,7 @@
 .header {
-    -webkit-text-stroke: 1px white;
-    color: #fe6226 !important;
-    font-family: 'Oswald', sans-serif;
-    font-size: 80px;
-    
+  -webkit-text-stroke: 1px white;
+  color: #fe6226 !important;
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 70px !important;
 }

@@ -5,6 +5,8 @@ export const BASE_SHEETS_URL =
 
 export default axios.create({
   baseURL: BASE_SHEETS_URL,
-  headers: { "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*" },
+  headers: {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+  },
 });

@@ -23,8 +23,8 @@ import IU_Home3 from "./homepage/IU_Home3.jpg";
 import IU_Home4 from "./homepage/IU_Home4.jpg";
 import IU_Home5 from "./homepage/IU_Home5.png";
 
-import BackgroundImage from "./homepage/BackgroundImage.jpg"
-import HeaderBackground from "./homepage/HeaderBackground.jpg"
+import BackgroundImage from "./homepage/BackgroundImage.jpg";
+import HeaderBackground from "./homepage/HeaderBackground.jpg";
 export {
   TeamPhoto1984,
   TeamPhoto1985,
@@ -44,11 +44,11 @@ export {
   TeamPhoto2020,
   TeamPhoto2021,
   TeamPhoto2022,
-    IU_Home1,
-    IU_Home2,
-    IU_Home3,
-    IU_Home4,
-    IU_Home5,
+  IU_Home1,
+  IU_Home2,
+  IU_Home3,
+  IU_Home4,
+  IU_Home5,
   BackgroundImage,
-  HeaderBackground
+  HeaderBackground,
 };

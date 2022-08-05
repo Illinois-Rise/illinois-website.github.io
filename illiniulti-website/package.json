@@ -1,7 +1,7 @@
 {
   "name": "illiniulti-website",
   "version": "0.1.0",
-  "homepage": "https://illinois-rise.github.io/home",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",

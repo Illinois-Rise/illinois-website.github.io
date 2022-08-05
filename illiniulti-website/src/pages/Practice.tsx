@@ -8,9 +8,8 @@ function Practice() {
       <Typography variant="h2" align="center">
         Practice
       </Typography>
-      <PracticeTable/>
+      <PracticeTable />
     </>
-    
   );
 }
 
