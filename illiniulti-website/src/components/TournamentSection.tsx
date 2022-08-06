@@ -10,14 +10,11 @@ import {
 import { useParams } from "react-router-dom";
 import { TOURNAMENTS_DATA } from "../data/tournaments/tournaments.data";
 
-import { TournamentYear } from "../data/tournaments/tournament.model";
-
 function TournamentSection() {
   const params = useParams();
-  console.log(params);
   const rosterData = TOURNAMENTS_DATA;
   const element = rosterData.find(
-    (data) => data.year.toString() == params.tournamentYear
+    (data) => data.year.toString() === params.tournamentYear
   );
   const tournamentYearData = element ? element?.tournaments : [];
 

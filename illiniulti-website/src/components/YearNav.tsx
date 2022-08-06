@@ -1,7 +1,6 @@
 import { Tabs, Tab } from "@mui/material";
 import { useState } from "react";
-import { To, useNavigate } from "react-router-dom";
-import { ROSTER_DATA } from "../data/roster/roster.data";
+import { useNavigate } from "react-router-dom";
 import { RosterYear } from "../data/roster/roster.model";
 import { TournamentYear } from "../data/tournaments/tournament.model";
 interface YearNavProps {

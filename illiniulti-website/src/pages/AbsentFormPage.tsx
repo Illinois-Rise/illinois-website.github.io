@@ -1,10 +1,9 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
-import React, { useState } from "react";
+import { Box, Typography } from "@mui/material";
+import { useState } from "react";
 import { FormInputText } from "../components/FormInputText";
 import { useForm } from "react-hook-form";
 import FormMessage from "../components/FormMessage";
 import { addAbsent } from "../api/AbsentForm";
-import Sidebars from "../components/Sidebars";
 
 function AbsentFormPage() {
   const [success, setSuccess] = useState(false);
@@ -33,7 +32,6 @@ function AbsentFormPage() {
       Timestamp: date.toDateString() + " " + date.toLocaleTimeString(),
       ...data,
     };
-    console.log(JSON.stringify(data));
     const jsonData = JSON.stringify(data);
     const successfulSubmit = await addAbsent(jsonData);
     if (successfulSubmit) {

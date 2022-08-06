@@ -1,10 +1,9 @@
-import React from "react";
+
 import { Box } from "@mui/system";
 import "react-slideshow-image/dist/styles.css";
 
 //pictures: To update, import the file from the images folder then add it to the images array
 import { IU_Home1, IU_Home2, IU_Home3, IU_Home4, IU_Home5 } from "../images";
-import Sidebars from "../components/Sidebars";
 
 const reactslideshowimage = require("react-slideshow-image");
 const { Fade } = reactslideshowimage;

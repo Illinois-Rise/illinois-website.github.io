@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Navigate, Outlet, useNavigate } from "react-router-dom";
-import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
+import { useEffect } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
+import { Box, Typography } from "@mui/material";
 import HistoryNav from "../components/HistoryNav";
 import { HISTORY_DATA } from "../data/history/history.data";
-import Sidebars from "../components/Sidebars";
 function TeamHistory() {
-  const isSmall = useMediaQuery("(max-width:1000px)");
 
   const navigate = useNavigate();
   const shouldRedirect = true;
@@ -15,10 +13,8 @@ function TeamHistory() {
     const years = historyData.map((data) => {
       return data.year;
     });
-    console.log(years);
 
     const recent = Math.max(...years).toString();
-    console.log(recent);
     if (shouldRedirect) {
       navigate(recent);
     }

@@ -1,4 +1,3 @@
-import * as React from "react";
 import "../styles/Header.css";
 import { Box, Paper, useMediaQuery } from "@mui/material";
 import { Typography } from "@mui/material";

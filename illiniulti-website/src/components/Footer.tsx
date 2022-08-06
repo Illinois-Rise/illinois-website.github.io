@@ -1,5 +1,4 @@
-import * as React from "react";
-import { AppBar, BottomNavigation, Box, Paper } from "@mui/material";
+import { AppBar } from "@mui/material";
 import { Typography } from "@mui/material";
 function Footer() {
   return (

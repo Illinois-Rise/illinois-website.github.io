@@ -1,6 +1,4 @@
 import { Box } from "@mui/material";
-import React from "react";
-import Sidebars from "../components/Sidebars";
 
 function ContactUs() {
   return (

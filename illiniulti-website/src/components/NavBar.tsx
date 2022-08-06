@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useMediaQuery } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -23,7 +22,6 @@ function NavBar() {
   const isDesktop = useMediaQuery("(min-width:1500px)");
   const navigate = useNavigate();
   const handleNavClick = (nav: To) => {
-    console.log(nav);
     navigate(nav);
   };
   return (

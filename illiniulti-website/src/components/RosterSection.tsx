@@ -10,13 +10,11 @@ import {
 import { useParams } from "react-router-dom";
 import { ROSTER_DATA } from "../data/roster/roster.data";
 
-import { RosterPlayer } from "../data/roster/roster.model";
-
 function RosterSection() {
   const params = useParams();
   const rosterData = ROSTER_DATA;
   const element = rosterData.find(
-    (data) => data.year.toString() == params.rosterYear
+    (data) => data.year.toString() === params.rosterYear
   );
   const rosterYearData = element ? element?.players : [];
 

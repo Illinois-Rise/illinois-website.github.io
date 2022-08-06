@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Grid } from "@mui/material";
 import reportWebVitals from "./reportWebVitals";
 import AboutUs from "./pages/AboutUs";
 import AbsentFormPage from "./pages/AbsentFormPage";

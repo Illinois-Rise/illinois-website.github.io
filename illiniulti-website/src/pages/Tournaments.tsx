@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import Sidebars from "../components/Sidebars";
 import YearNav from "../components/YearNav";
 import { TOURNAMENTS_DATA } from "../data/tournaments/tournaments.data";
 function Tournaments() {
@@ -17,10 +16,8 @@ function Tournaments() {
     const years = rosterData.map((data) => {
       return data.year;
     });
-    console.log(years);
 
     const recent = Math.max(...years).toString();
-    console.log(recent);
 
     if (shouldRedirect) {
       navigate(recent);

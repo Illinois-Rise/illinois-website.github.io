@@ -1,6 +1,5 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ResultsTable from "../components/ResultsTable";
-import Sidebars from "../components/Sidebars";
 
 function PastResults() {
   return (
