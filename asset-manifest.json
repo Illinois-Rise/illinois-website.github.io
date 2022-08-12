@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/illinois-website.github.io/static/css/main.a343db00.css",
-    "main.js": "/illinois-website.github.io/static/js/main.7ee9a678.js",
+    "main.js": "/illinois-website.github.io/static/js/main.a1dde388.js",
     "static/js/787.4d3b897d.chunk.js": "/illinois-website.github.io/static/js/787.4d3b897d.chunk.js",
     "static/media/team-photo-2022.png": "/illinois-website.github.io/static/media/team-photo-2022.058db6068928e0b73d56.png",
     "static/media/IU_Home5.png": "/illinois-website.github.io/static/media/IU_Home5.17c0939544f549d8584c.png",
@@ -40,11 +40,11 @@
     "static/media/oswald-v49-latin-regular.woff2": "/illinois-website.github.io/static/media/oswald-v49-latin-regular.37ffdd2667b8a0045f0d.woff2",
     "index.html": "/illinois-website.github.io/index.html",
     "main.a343db00.css.map": "/illinois-website.github.io/static/css/main.a343db00.css.map",
-    "main.7ee9a678.js.map": "/illinois-website.github.io/static/js/main.7ee9a678.js.map",
+    "main.a1dde388.js.map": "/illinois-website.github.io/static/js/main.a1dde388.js.map",
     "787.4d3b897d.chunk.js.map": "/illinois-website.github.io/static/js/787.4d3b897d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a343db00.css",
-    "static/js/main.7ee9a678.js"
+    "static/js/main.a1dde388.js"
   ]
 }
