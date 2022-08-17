@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3332a6bc.css",
-    "main.js": "/static/js/main.cc906c41.js",
+    "main.js": "/static/js/main.94215c38.js",
     "static/js/787.4d3b897d.chunk.js": "/static/js/787.4d3b897d.chunk.js",
     "static/media/team-photo-2022.png": "/static/media/team-photo-2022.058db6068928e0b73d56.png",
     "static/media/IU_Home5.png": "/static/media/IU_Home5.17c0939544f549d8584c.png",
@@ -40,11 +40,11 @@
     "static/media/oswald-v49-latin-regular.woff2": "/static/media/oswald-v49-latin-regular.37ffdd2667b8a0045f0d.woff2",
     "index.html": "/index.html",
     "main.3332a6bc.css.map": "/static/css/main.3332a6bc.css.map",
-    "main.cc906c41.js.map": "/static/js/main.cc906c41.js.map",
+    "main.94215c38.js.map": "/static/js/main.94215c38.js.map",
     "787.4d3b897d.chunk.js.map": "/static/js/787.4d3b897d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3332a6bc.css",
-    "static/js/main.cc906c41.js"
+    "static/js/main.94215c38.js"
   ]
 }
