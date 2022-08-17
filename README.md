@@ -7,6 +7,7 @@ UI will be using [material-ui](https://mui.com/material-ui/getting-started/usage
 
 Routing using [react-router-dom](https://reactrouter.com/docs/en/v6/getting-started/overview)
 
+Entire website is within illiniulti-website
 Changes: Not using Google Tag Manager to keep track of usage
 
 ## Adding New Information
