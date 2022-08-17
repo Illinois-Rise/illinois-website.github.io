@@ -68,11 +68,11 @@ function Sidebars({ children }: SidebarsProps) {
                   }}
                 >
                   <Typography m={1} variant="h4" align="center">
-                    Help Out Illinois Ultimate!
+                    Help Out Illinois Rise
                   </Typography>
 
                   <Typography m={1} variant="body1" align="center">
-                    Illinois Ultimate is mostly student-funded, help us out by
+                    Illinois Rise is mostly student-funded, help us out by
                     donating!
                   </Typography>
                   <a

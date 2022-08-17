@@ -2,6 +2,11 @@ import { Award } from "./awards.model";
 
 export const AWARDS_DATA: Award[] = [
   {
+    year: 2022,
+    name: "Eli Artemakis",
+    award: "Great Lakes All Region 1st Team"
+  },
+  {
     year: 2021,
     name: "Eli Artemakis",
     award: "D-I Mens Rookie of the Year",
@@ -59,7 +64,7 @@ export const AWARDS_DATA: Award[] = [
   {
     year: 2015,
     name: "Matt Stupca",
-    award: "COTY",
+    award: "Great Lakes COTY",
   },
   {
     year: 2015,
@@ -103,7 +108,7 @@ export const AWARDS_DATA: Award[] = [
   },
   {
     year: 2013,
-    name: "Brad Bollinger",
+    name: "Brad Bolliger",
     award: "All Region 2nd Team",
   },
   {

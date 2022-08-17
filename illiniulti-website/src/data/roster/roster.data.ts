@@ -2,6 +2,132 @@ import { RosterYear } from "./roster.model";
 
 export const ROSTER_DATA: RosterYear[] = [
   {
+    year: 2022,
+    imagePath: "./assets/team-photo-2022.jpg",
+    players: [
+      {
+        number: 0,
+        name: "Eli Artemakis",
+        year: "Sophomore",
+      },
+      {
+        number: 2,
+        name: "Tyler Smiles",
+        year: "Senior",
+      },
+      {
+        number: 4,
+        name: "Kai Bowen",
+        year: "Freshman",
+      },
+      {
+        number: 7,
+        name: "Tim Sheehan",
+        year: "Sophomore",
+      },
+      {
+        number: 8,
+        name: 'Patrick "Mark" Driscoll',
+        year: "Junior",
+      },
+      {
+        number: 9,
+        name: "Kai Tang",
+        year: "Sophomore",
+      },
+      {
+        number: 11,
+        name: "Joey Kennedy",
+        year: "Senior",
+      },
+      {
+        number: 13,
+        name: "JT Kirages",
+        year: "Junior",
+      },
+      {
+        number: 16,
+        name: "Andy Kennedy",
+        year: "Junior",
+      },
+      {
+        number: 19,
+        name: "Dave Kiaupa",
+        year: "Junior",
+      },
+      {
+        number: 20,
+        name: "Evan Driscoll",
+        year: "Sophomore",
+      },
+      {
+        number: 25,
+        name: "Simon Perez",
+        year: "Freshman",
+      },
+      {
+        number: 27,
+        name: "Jack Joshi",
+        year: "Junior",
+      },
+      {
+        number: 29,
+        name: "Daniel Sawai",
+        year: "Freshman",
+      },
+      {
+        number: 33,
+        name: "Trevor Scott",
+        year: "Sophomore",
+      },
+      {
+        number: 40,
+        name: "Emil Weisfield",
+        year: "Freshman",
+      },
+      {
+        number: 43,
+        name: "David Yao",
+        year: "Grad",
+      },
+      {
+        number: 49,
+        name: "Nathan Zock",
+        year: "Freshman",
+      },
+      {
+        number: 51,
+        name: "Michael Iarrapino",
+        year: "Freshman",
+      },
+      {
+        number: 52,
+        name: "John Wolff",
+        year: "Grad",
+      },
+      {
+        number: 70,
+        name: "Kevin Zhou",
+        year: "Junior",
+      },
+      {
+        number: 87,
+        name: "Michael Musial",
+        year: "Senior",
+      },
+      {
+        number: undefined,
+        name: "Brad Bollinger",
+        year: "Coach",
+      },
+      {
+        number: undefined,
+        name: "Eric Badger",
+        year: "Coach",
+      },
+    ]
+  },
+  {
     year: 2021,
     imagePath: "./assets/team-photo-2021.jpg",
     players: [

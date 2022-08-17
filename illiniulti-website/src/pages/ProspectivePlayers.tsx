@@ -2,6 +2,7 @@ import {
   Box,
   Typography,
 } from "@mui/material";
+import ProspectivePlayersForm from "../components/ProspectivePlayerForm";
 
 function ProspectivePlayers() {
   
@@ -74,6 +75,7 @@ function ProspectivePlayers() {
 
        
       </Box>
+      <ProspectivePlayersForm/>
     </>
   );
 }

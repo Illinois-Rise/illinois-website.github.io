@@ -2,6 +2,14 @@ import { Result } from "./results.model";
 
 export const RESULTS_DATA: Result[] = [
   {
+    year: 2022,
+    sectionals: "1st",
+    regionals: "5th",
+    nationals: "-",
+    teamPageLabel: "USAU",
+    teamPageLink: "https://play.usaultimate.org/events/teams/?EventTeamId=Q8K6zZ5JB2sadh6L8Db1f0VGILlJgEsALdWTRqvRgr8%3d"
+  },
+  {
     year: 2021,
     sectionals: "2nd",
     regionals: "2nd",

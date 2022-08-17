@@ -2,6 +2,83 @@ import { TournamentYear } from "./tournament.model";
 
 export const TOURNAMENTS_DATA: TournamentYear[] = [
   {
+    year: 2022,
+    tournaments: [
+      {
+        season: "Spring",
+        nameLabel: "Missouri Loves Company",
+        nameLink: "https://play.usaultimate.org/events/Missouri-Loves-Company-MLC/",
+        when: "March 18-20",
+        location: "Boonville, MO",
+        result: "-"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Easterns",
+        nameLink: "https://play.usaultimate.org/events/Easterns-2022/",
+        when: "April 2-3",
+        location: "SC",
+        result: "14th",
+      },
+      {
+        season: "Spring",
+        nameLabel: "Illinois Conferences",
+        nameLink: "https://play.usaultimate.org/events/Illinois-D-I-College-Mens-CC-2022/",
+        when: "April 23-24",
+        location: "Rantoul, IL",
+        result: "1st",
+      },
+      {
+        season: "Spring",
+        nameLabel: "Great Lakes D-I College Men's Regionals",
+        nameLink: "https://play.usaultimate.org/events/Great-Lakes-D-I-College-Mens-Regionals-2022/",
+        when: "Apr. 30 - Mar. 1",
+        location: "Fort Wayne, IN",
+        result: "5th",
+      }
+    ]
+  },
+  {
+    year: 2021,
+    tournaments: [
+      {
+        season: "Fall",
+        nameLabel: "Stanley Cup",
+        nameLink: "",
+        when: "Sept. 25-26",
+        location: "Rantoul, IL",
+        result: "-"
+      },
+      {
+        season: "Fall",
+        nameLabel: "Illinois Conferences",
+        nameLink:
+          "https://play.usaultimate.org/events/Illinois-D-I-College-Mens-CC-2021/",
+        when: "Oct. 23-24",
+        location: "Rantoul, IL",
+        result: "2nd",
+      },
+      {
+        season: "Fall",
+        nameLabel: "Great Lakes Regionals",
+        nameLink: "https://play.usaultimate.org/events/Great-Lakes-D-I-College-Mens-Regionals-2021/",
+        when: "Nov. 6-7",
+        location: "Holland, MI",
+        result: "2nd"
+      },
+      {
+        season: "Fall",
+        nameLabel: "D-I National Championships",
+        nameLink: "https://play.usaultimate.org/events/USA-Ultimate-College-Championships-2021/",
+        when: "Dec. 17-20",
+        location: "Norco, CA",
+        result: "17th"
+      }
+     
+
+    ],
+  },
+  {
     year: 2020,
     tournaments: [
       {
