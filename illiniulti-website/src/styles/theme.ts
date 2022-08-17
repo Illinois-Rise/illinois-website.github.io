@@ -3,6 +3,20 @@ import { ThemeOptions } from "@mui/material/styles";
 import "./styles.css";
 
 export const themeOptions: ThemeOptions = {
+  breakpoints: {
+    values: {
+      // extra-small
+      xs: 0,
+      // small
+      sm: 300,
+      // medium
+      md: 900,
+      // large
+      lg: 1200,
+      // extra-large
+      xl: 1536,
+    },
+  },
   palette: {
     primary: {
       main: "#142C4C",

@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { useState } from "react";
 import { FormInputText } from "../components/FormInputText";
 import { useForm } from "react-hook-form";
@@ -45,7 +45,7 @@ function AbsentFormPage() {
   };
   return (
     <>
-      <Typography align="center" variant="h2">
+      <Typography align="center" variant="h2" mb={1}>
         Practice Absence Form
       </Typography>
       <Box
@@ -91,7 +91,9 @@ function AbsentFormPage() {
             rules={formOptions.date}
           />
           <Box m={1}>
-            <input type="submit"></input>
+            <Button type="submit" variant="outlined">
+              Submit Form
+            </Button>
             {loading && (
               <FormMessage message="Sending..." isFailure={false}></FormMessage>
             )}

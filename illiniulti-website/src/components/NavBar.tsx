@@ -19,7 +19,7 @@ import { Email } from "@mui/icons-material";
 import DropdownMenu from "./DropdownMenu";
 
 function NavBar() {
-  const isDesktop = useMediaQuery("(min-width:1500px)");
+  const isDesktop = useMediaQuery("(min-width:1200px)");
   const navigate = useNavigate();
   const handleNavClick = (nav: To) => {
     navigate(nav);

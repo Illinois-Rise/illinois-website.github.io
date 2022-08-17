@@ -5,8 +5,9 @@ interface FormInputTextProps {
   name: string;
   control: Control<FieldValues, any>;
   label: string;
-  rules: { required: string } | { required: boolean };
+  rules?: { required: string } | { required: boolean };
   multiline?: boolean;
+  defaultValue?: string;
 }
 export const FormInputText = ({
   name,
@@ -14,20 +15,22 @@ export const FormInputText = ({
   label,
   rules,
   multiline = false,
+  defaultValue = "",
 }: FormInputTextProps) => {
   return (
     <Controller
       name={name}
       control={control}
-      defaultValue=""
+      defaultValue={defaultValue}
       render={
         ({ field: { onChange, value } }) => (
           <TextField
-            required
+            label={label}
+            InputLabelProps={{ shrink: true }}
+            required={rules?.required ? true : false}
             size="small"
             onChange={onChange}
             value={value}
-            label={label}
             multiline={multiline}
           />
         ) //need to format the popup so that it anchors on the textfield

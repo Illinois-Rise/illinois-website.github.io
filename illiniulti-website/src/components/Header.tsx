@@ -28,7 +28,7 @@ function Header() {
           <></>
         )}
 
-        <Typography align="center" className="header">
+        <Typography align="center" className="header" ml={1}>
           ILLINOIS RISE
         </Typography>
       </Box>

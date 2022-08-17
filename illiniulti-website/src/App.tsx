@@ -16,9 +16,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       {
-        //TODO: Actually fix the build version of this thing, problems with MIME type
-        //TODO: Make sure that the home page pictures still show up after navigating away from home page
-        //TODO: Fix the Submit Query button to look nicer
+        //TODO: Add 2022 roster
+        //TODO: Fix reload error so that webpack can reload to index.html rather than the route
+        //TODO: Fix favicon so its not a white square
         //Prettier Everything: ./node_modules/.bin/prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
       }
         <Grid container alignItems="center">

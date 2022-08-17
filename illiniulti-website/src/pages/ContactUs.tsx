@@ -12,26 +12,11 @@ function ContactUs() {
       <p className="program">
         <a href="mailto: illiniulti@gmail.com">illiniulti@gmail.com</a>
       </p>
-
       <p>
-        For any questions regarding practice or club details, feel free to
-        contact any of the current captains:
-      </p>
-
-      <p className="captain">
-        <a href="mailto: pmd3@illinois.edu">
-          Patrick Driscoll (pmd3@illinois.edu)
-        </a>
-      </p>
-      <p className="captain">
-        <a href="mailto: kjzhou2@illinois.edu">
-          Kevin Zhou (kjzhou2@illinois.edu)
-        </a>
-      </p>
-      <p className="captain">
-        <a href="mailto: kostasa2@illinois.edu">
-          Eli Artemakis (kostasa2@illinois.edu)
-        </a>
+        For support or to report website issues, email the admin at{" "}
+        <a href="mailto: eric.c.badger@gmail.com">eric.c.badger@gmail.com</a> or
+        the creator at{" "}
+        <a href="mailto: kevinzhou721@gmail.com">kevinzhou721@gmail.com</a>
       </p>
     </Box>
   );

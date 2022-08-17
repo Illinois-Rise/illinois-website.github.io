@@ -4,7 +4,6 @@ import { Box, Typography } from "@mui/material";
 import HistoryNav from "../components/HistoryNav";
 import { HISTORY_DATA } from "../data/history/history.data";
 function TeamHistory() {
-
   const navigate = useNavigate();
   const shouldRedirect = true;
   useEffect(() => {

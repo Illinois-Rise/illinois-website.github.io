@@ -1,9 +1,10 @@
 {
   "name": "illiniulti-website",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://www.illinoisrise.com",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.5",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.3",
@@ -25,7 +26,7 @@
     "react-dom": "^18.1.0",
     "react-hook-form": "^7.32.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-slideshow-image": "^3.7.5",
     "react-twitter-widgets": "^1.11.0",
     "typescript": "^4.7.3",
@@ -34,9 +35,9 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "husky": {

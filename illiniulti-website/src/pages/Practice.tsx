@@ -7,6 +7,12 @@ function Practice() {
         Practice
       </Typography>
       <PracticeTable />
+      <Typography align="center">
+        While unlikely, times subject to change based on field availability.
+      </Typography>
+      <Typography align="center">
+        (If on mobile, please scroll to see locations)
+      </Typography>
     </>
   );
 }
