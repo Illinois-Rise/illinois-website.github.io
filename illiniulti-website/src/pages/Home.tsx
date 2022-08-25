@@ -1,10 +1,7 @@
-import { Paper, Typography } from "@mui/material";
-import { blue } from "@mui/material/colors";
+import { Button, Grid, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import "react-slideshow-image/dist/styles.css";
-import ProspectivePlayersForm from "../components/ProspectivePlayerForm";
-import { HeaderBackground } from "../images";
-
+import { To, useNavigate } from "react-router-dom";
 //pictures: To update, import the file from the images folder then add it to the images array
 import { IU_Home1, IU_Home2, IU_Home3, IU_Home4, IU_Home5 } from "../images";
 
@@ -13,6 +10,8 @@ const { Fade } = reactslideshowimage;
 
 function Home() {
   const images = [IU_Home1, IU_Home2, IU_Home3, IU_Home4, IU_Home5];
+  const navigate = useNavigate();
+
   return (
     
     <Box
@@ -23,9 +22,7 @@ function Home() {
         pt: 2, //padding top
       }}
     >
-      <Typography variant="h2" m={2}>Interest Form</Typography>
-      <ProspectivePlayersForm/>
-      {/* <Fade duration={7500} easing="ease">
+      <Fade duration={7500} easing="ease">
         {images.map((image, index) => (
           <Box
             component="img"
@@ -35,7 +32,22 @@ function Home() {
             key={index}
           ></Box>
         ))}
-      </Fade> */}
+      </Fade>
+      <Grid
+        container
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Grid item>
+          <Typography variant="h4">Looking to Play?</Typography>
+        </Grid>
+        <Grid item>
+          <Button variant="outlined" onClick={()=> {navigate("/prospective")}}>Click Here!</Button>
+        </Grid>
+        
+      </Grid>
+      
     </Box>
   );
 }

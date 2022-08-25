@@ -1,5 +1,6 @@
 import {
   Box,
+  Link,
   Typography,
 } from "@mui/material";
 import ProspectivePlayersForm from "../components/ProspectivePlayerForm";
@@ -12,6 +13,11 @@ function ProspectivePlayers() {
         Prospective Players
       </Typography>
       <Box m={1}>
+        {/* <Typography component="div">
+          <Box component="span" sx={{ fontWeight: "bold" }}>
+          Want to see a recording of the 2022-2023 Info Session? <Link href="https://www.google.com" target="_blank">Click Here!</Link>
+          </Box>
+        </Typography> */}
         <Typography component="div">
           Illinois Ultimate has had a long history since its inception in the
           early 1990s and now consistently competes with best competition around
@@ -65,7 +71,9 @@ function ProspectivePlayers() {
           Great Lakes region (see our All-Regions honors page).
         </Typography>
         <Typography paragraph={true}>
-          We encourage prospective players to fill out our interest form and to
+          <Box component="span" sx={{ fontWeight: "bold" }}>
+          We encourage prospective players to fill out our interest form
+          </Box> and to
           reach out to the captains especially if you will be on campus. We are
           more than happy to meet up and discuss what Illinois can do for you,
           and to see what you can do to be ready for Illinois once you get on

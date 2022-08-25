@@ -16,9 +16,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       {
-        //TODO: Add 2022 roster
-        //TODO: Fix reload error so that webpack can reload to index.html rather than the route
         //TODO: Fix favicon so its not a white square
+        //TODO: Add calendar picker in the Absence Form
         //Prettier Everything: ./node_modules/.bin/prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
       }
         <Grid container alignItems="center">
