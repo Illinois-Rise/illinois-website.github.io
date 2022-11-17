@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3332a6bc.css",
-    "main.js": "/static/js/main.93c73c50.js",
+    "main.js": "/static/js/main.0c44361e.js",
     "static/js/787.4d3b897d.chunk.js": "/static/js/787.4d3b897d.chunk.js",
     "static/media/team-photo-2022.png": "/static/media/team-photo-2022.058db6068928e0b73d56.png",
     "static/media/IU_Home5.png": "/static/media/IU_Home5.17c0939544f549d8584c.png",
@@ -12,7 +12,6 @@
     "static/media/team-photo-2020.jpg": "/static/media/team-photo-2020.60d507bcbcedbc6ae2b4.jpg",
     "static/media/HeaderBackground.jpg": "/static/media/HeaderBackground.cc4040723e34310d5797.jpg",
     "static/media/team-photo-2011.jpg": "/static/media/team-photo-2011.ca531bc9cfb72802a97e.jpg",
-    "static/media/RisePhoenix.png": "/static/media/RisePhoenix.43cdcdc18f942dc9e945.png",
     "static/media/team-photo-2018.jpg": "/static/media/team-photo-2018.09765aaf2b3c9d2c5a42.jpg",
     "static/media/IU_Home1.jpg": "/static/media/IU_Home1.a896768abc499d14cf52.jpg",
     "static/media/team-photo-1985.jpg": "/static/media/team-photo-1985.6c72e5c2340b3c318d90.jpg",
@@ -20,6 +19,7 @@
     "static/media/team-photo-2012.jpg": "/static/media/team-photo-2012.585a4ff16f8e9d5246f6.jpg",
     "static/media/team-photo-2014.jpg": "/static/media/team-photo-2014.3b2f2e030e464e2898f7.jpg",
     "static/media/team-photo-2015.jpg": "/static/media/team-photo-2015.1c1be69aed13c014f470.jpg",
+    "static/media/RisePhoenix.png": "/static/media/RisePhoenix.ba56cf666eace88c632c.png",
     "static/media/team-photo-2013.jpg": "/static/media/team-photo-2013.5349eb98353869638f49.jpg",
     "static/media/team-photo-2010.jpg": "/static/media/team-photo-2010.29744a14c551dbf8e067.jpg",
     "static/media/team-photo-2009.jpg": "/static/media/team-photo-2009.3b7dbf8ce0be3dd9705d.jpg",
@@ -40,11 +40,11 @@
     "static/media/oswald-v49-latin-regular.woff2": "/static/media/oswald-v49-latin-regular.37ffdd2667b8a0045f0d.woff2",
     "index.html": "/index.html",
     "main.3332a6bc.css.map": "/static/css/main.3332a6bc.css.map",
-    "main.93c73c50.js.map": "/static/js/main.93c73c50.js.map",
+    "main.0c44361e.js.map": "/static/js/main.0c44361e.js.map",
     "787.4d3b897d.chunk.js.map": "/static/js/787.4d3b897d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3332a6bc.css",
-    "static/js/main.93c73c50.js"
+    "static/js/main.0c44361e.js"
   ]
 }
