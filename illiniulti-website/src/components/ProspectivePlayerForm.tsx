@@ -24,6 +24,7 @@ function ProspectivePlayersForm() {
     const formOptions = {
         firstname: { required: "First Name is required" },
         lastname: { required: "Last Name is required" },
+        year: { required: "Year in School is required"},
         email: { required: "Email is required" },
         hometown: { required: "Hometown is required" },
         highschool: { required: false },
@@ -71,6 +72,13 @@ function ProspectivePlayersForm() {
             name={"Last Name"}
             control={control}
             label={"Last Name"}
+            rules={formOptions.lastname}
+          />
+
+          <FormInputText
+            name={"Year"}
+            control={control}
+            label={"Year in School"}
             rules={formOptions.lastname}
           />
 
