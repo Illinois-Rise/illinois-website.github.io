@@ -2,6 +2,172 @@ import { RosterYear } from "./roster.model";
 
 export const ROSTER_DATA: RosterYear[] = [
   {
+    year: 2023,
+    imagePath: "./assets/team-photo-2022.jpg",
+    players: [
+        {
+        number: 0,
+        name: "Eli Artemakis*",
+        year: "Junior",
+        },
+        {
+        number: 2,
+        name: "Griffin Kelley",
+        year: "Freshman",
+        },
+        {
+        number: 3,
+        name: "Dean Gottlieb",
+        year: "Freshman",
+        },
+        {
+        number: 4,
+        name: "Kai Bowen",
+        year: "Sophomore",
+        },
+        {
+        number: 7,
+        name: "Tim Sheehan",
+        year: "Junior",
+        },
+        {
+        number: 8,
+        name: 'Patrick "Mark" Driscoll*',
+        year: "Senior",
+        },
+        {
+        number: 9,
+        name: "Kai Tang",
+        year: "Sophomore",
+        },
+        {
+        number: 10,
+        name: "Kevin Zhang",
+        year: "Grad",
+        },
+        {
+        number: 13,
+        name: "JT Kirages",
+        year: "Senior",
+        },
+        {
+        number: 16,
+        name: "Andy Kennedy",
+        year: "Senior",
+        },
+        {
+        number: 17,
+        name: "Will Voss",
+        year: "Freshman",
+        },
+        {
+        number: 19,
+        name: "Dave Kiaupa",
+        year: "Senior",
+        },
+        {
+        number: 20,
+        name: "Evan Driscoll",
+        year: "Junior",
+        },
+        {
+        number: 21,
+        name: "Alex Zheng",
+        year: "Grad",
+        },
+        {
+        number: 22,
+        name: "Ryan Roach",
+        year: "Grad",
+        },
+        {
+        number: 23,
+        name: "Maximus Nelson",
+        year: "Senior",
+        },
+        {
+        number: 25,
+        name: "Simon Perez",
+        year: "Freshman",
+        },
+        {
+        number: 24,
+        name: "Kevin Lui",
+        year: "Sophomore",
+        },
+        {
+        number: 27,
+        name: "Jack Joshi",
+        year: "Senior",
+        },
+        {
+        number: 29,
+        name: "Sean Hickey",
+        year: "Freshman",
+        },
+        {
+        number: 30,
+        name: "Daniel Sawai",
+        year: "Sophomore",
+        },
+        {
+        number: 33,
+        name: "Trevor Scott",
+        year: "Sophomore",
+        },
+        {
+        number: 40,
+        name: "Emil Weisfield",
+        year: "Sophomore",
+        },
+        {
+        number: 44,
+        name: "Evan Benjamin",
+        year: "Junior",
+        },
+        {
+        number: 49,
+        name: "Nathan Zock",
+        year: "Sophomore",
+        },
+        {
+        number: 51,
+        name: "Michael Iarrapino",
+        year: "Sophomore",
+        },
+        {
+        number: 61,
+        name: "Patrick Leah",
+        year: "Senior",
+        },
+        {
+        number: 70,
+        name: "Kevin Zhou*",
+        year: "Junior",
+        },
+        {
+        number: 75,
+        name: "Matt Rylander",
+        year: "Sophomore",
+        },
+        {
+        number: 86,
+        name: "Kevin Tan",
+        year: "Grad",
+        },
+        {
+        number: undefined,
+        name: "Brad Bollinger",
+        year: "Coach",
+        },
+        {
+        number: undefined,
+        name: "Eric Badger",
+        year: "Coach",
+        },
+    ]
+    },
+  {
     year: 2022,
     imagePath: "./assets/team-photo-2022.jpg",
     players: [
@@ -12,7 +178,7 @@ export const ROSTER_DATA: RosterYear[] = [
       },
       {
         number: 2,
-        name: "Tyler Smiles",
+        name: "Tyler Smiles*",
         year: "Senior",
       },
       {
@@ -27,7 +193,7 @@ export const ROSTER_DATA: RosterYear[] = [
       },
       {
         number: 8,
-        name: 'Patrick "Mark" Driscoll',
+        name: 'Patrick "Mark" Driscoll*',
         year: "Junior",
       },
       {
@@ -37,7 +203,7 @@ export const ROSTER_DATA: RosterYear[] = [
       },
       {
         number: 11,
-        name: "Joey Kennedy",
+        name: "Joey Kennedy*",
         year: "Senior",
       },
       {
