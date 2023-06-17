@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.dbc44aba.chunk.css",
-    "main.js": "/static/js/main.57793839.chunk.js",
-    "main.js.map": "/static/js/main.57793839.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.dadc9d91.js",
-    "runtime-main.js.map": "/static/js/runtime-main.dadc9d91.js.map",
+    "main.js": "/static/js/main.84fe31e9.chunk.js",
+    "main.js.map": "/static/js/main.84fe31e9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.113f85e0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.113f85e0.js.map",
     "static/css/2.c9ce1f70.chunk.css": "/static/css/2.c9ce1f70.chunk.css",
-    "static/js/2.f46e8cf6.chunk.js": "/static/js/2.f46e8cf6.chunk.js",
-    "static/js/2.f46e8cf6.chunk.js.map": "/static/js/2.f46e8cf6.chunk.js.map",
-    "static/js/3.7a07e621.chunk.js": "/static/js/3.7a07e621.chunk.js",
-    "static/js/3.7a07e621.chunk.js.map": "/static/js/3.7a07e621.chunk.js.map",
+    "static/js/2.9c651653.chunk.js": "/static/js/2.9c651653.chunk.js",
+    "static/js/2.9c651653.chunk.js.map": "/static/js/2.9c651653.chunk.js.map",
+    "static/js/3.344b0940.chunk.js": "/static/js/3.344b0940.chunk.js",
+    "static/js/3.344b0940.chunk.js.map": "/static/js/3.344b0940.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.c9ce1f70.chunk.css.map": "/static/css/2.c9ce1f70.chunk.css.map",
     "static/css/main.dbc44aba.chunk.css.map": "/static/css/main.dbc44aba.chunk.css.map",
-    "static/js/2.f46e8cf6.chunk.js.LICENSE.txt": "/static/js/2.f46e8cf6.chunk.js.LICENSE.txt",
+    "static/js/2.9c651653.chunk.js.LICENSE.txt": "/static/js/2.9c651653.chunk.js.LICENSE.txt",
     "static/media/BackgroundImage.d21a2a0e.jpg": "/static/media/BackgroundImage.d21a2a0e.jpg",
     "static/media/HeaderBackground.cc404072.jpg": "/static/media/HeaderBackground.cc404072.jpg",
     "static/media/IU_Home1.a896768a.jpg": "/static/media/IU_Home1.a896768a.jpg",
@@ -43,13 +43,14 @@
     "static/media/team-photo-2020.60d507bc.jpg": "/static/media/team-photo-2020.60d507bc.jpg",
     "static/media/team-photo-2021.b5a0de7c.png": "/static/media/team-photo-2021.b5a0de7c.png",
     "static/media/team-photo-2022.058db606.png": "/static/media/team-photo-2022.058db606.png",
+    "static/media/team-photo-2023.c071431e.jpg": "/static/media/team-photo-2023.c071431e.jpg",
     "static/media/twitterButton.66f2dabf.png": "/static/media/twitterButton.66f2dabf.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dadc9d91.js",
+    "static/js/runtime-main.113f85e0.js",
     "static/css/2.c9ce1f70.chunk.css",
-    "static/js/2.f46e8cf6.chunk.js",
+    "static/js/2.9c651653.chunk.js",
     "static/css/main.dbc44aba.chunk.css",
-    "static/js/main.57793839.chunk.js"
+    "static/js/main.84fe31e9.chunk.js"
   ]
 }
