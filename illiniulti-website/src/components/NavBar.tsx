@@ -68,6 +68,15 @@ function NavBar() {
               </Button>
               <Button
                 color="inherit"
+                startIcon={<Cancel />}
+                onClick={() => {
+                  handleNavClick("/absentform/");
+                }}
+              >
+                Absent Form
+              </Button>
+              <Button
+                color="inherit"
                 startIcon={<CalendarMonth />}
                 onClick={() => {
                   handleNavClick("/tournaments/");
@@ -83,15 +92,6 @@ function NavBar() {
                 }}
               >
                 Roster
-              </Button>
-              <Button
-                color="inherit"
-                startIcon={<Cancel />}
-                onClick={() => {
-                  handleNavClick("/absentform/");
-                }}
-              >
-                Absent Form
               </Button>
               <Button
                 color="inherit"

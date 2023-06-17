@@ -1,9 +1,12 @@
 import { RosterYear } from "./roster.model";
 
+//The imagePath isn't used, it's legacy code and doesn't need to be there
+//Further version of the website can remove it from the roster.model.ts
+
 export const ROSTER_DATA: RosterYear[] = [
   {
     year: 2023,
-    imagePath: "./assets/team-photo-2022.jpg",
+    imagePath: "./assets/team-photo-2023.jpg",
     players: [
         {
         number: 0,

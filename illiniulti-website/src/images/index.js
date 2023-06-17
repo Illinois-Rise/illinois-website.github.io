@@ -16,6 +16,7 @@ import TeamPhoto2019 from "./history/team-photo-2019.jpg";
 import TeamPhoto2020 from "./history/team-photo-2020.jpg";
 import TeamPhoto2021 from "./history/team-photo-2021.png";
 import TeamPhoto2022 from "./history/team-photo-2022.png";
+import TeamPhoto2023 from "./history/team-photo-2023.jpg"
 
 import IU_Home1 from "./homepage/IU_Home1.jpg";
 import IU_Home2 from "./homepage/IU_Home2.jpg";
@@ -44,6 +45,7 @@ export {
   TeamPhoto2020,
   TeamPhoto2021,
   TeamPhoto2022,
+  TeamPhoto2023,
   IU_Home1,
   IU_Home2,
   IU_Home3,

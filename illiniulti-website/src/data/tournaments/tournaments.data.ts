@@ -1,6 +1,68 @@
 import { TournamentYear } from "./tournament.model";
+//TODO: If the namelink is empty, then don't show a link to be able to be clicked
 
 export const TOURNAMENTS_DATA: TournamentYear[] = [
+  {
+    year: 2023,
+    tournaments: [
+        {
+        season: "Fall",
+        nameLabel: "Skip To The Lou",
+        nameLink: "",
+        when: "Sept. 24-25",
+        location: "St. Louis, MI",
+        result: "-"
+        },
+        {
+        season: "Fall",
+        nameLabel: "No Wisconsequences",
+        nameLink: "",
+        when: "Oct. 8-9",
+        location: "Hartland, WI",
+        result: "-"
+        },
+        {
+        season: "Fall",
+        nameLabel: "Missouri Loves Company",
+        nameLink: "https://scorereport.net/2022/college-open/event16827",
+        when: "Nov. 12-13",
+        location: "Columbia, MO",
+        result: "-"
+        },
+        {
+        season: "Spring",
+        nameLabel: "Florida Warmup",
+        nameLink: "https://play.usaultimate.org/events/Florida-Warm-Up-2023/",
+        when: "February 3-5",
+        location: "Tampa, FL",
+        result: "18T"
+        },
+        {
+        season: "Spring",
+        nameLabel: "Centex",
+        nameLink: "https://play.usaultimate.org/events/Centex-2023/",
+        when: "March 17-19",
+        location: "Austin, TX",
+        result: "16th",
+        },
+        {
+        season: "Spring",
+        nameLabel: "Illinois Conferences",
+        nameLink: "https://play.usaultimate.org/events/Illinois-D-I-College-Mens-CC-2023/",
+        when: "April 15-16",
+        location: "Rantoul, IL",
+        result: "2nd",
+        },
+        {
+        season: "Spring",
+        nameLabel: "Great Lakes D-I College Men's Regionals",
+        nameLink: "https://play.usaultimate.org/events/Great-Lakes-D-I-College-Mens-Regionals-2023/",
+        when: "May 6-7",
+        location: "Holland, MI",
+        result: "3rd",
+        }
+    ]
+  },
   {
     year: 2022,
     tournaments: [
