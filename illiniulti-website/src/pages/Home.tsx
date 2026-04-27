@@ -22,6 +22,25 @@ function Home() {
         pt: 2, //padding top
       }}
     >
+       {/* Embed YouTube Video */}
+       <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          mb: 4, // margin-bottom
+        }}
+      >
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/tGDV0BsAzWw?si=sHyrZoi2zNSDzJF6" // Replace with your YouTube video URL
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </Box>
+      
       <Fade duration={7500} easing="ease">
         {images.map((image, index) => (
           <Box

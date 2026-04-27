@@ -39,6 +39,9 @@ function Roster() {
         </Box>
         <Outlet />
       </Box>
+      <Typography m={1} variant="body1">
+        *Captain
+      </Typography>
     </>
   );
 }

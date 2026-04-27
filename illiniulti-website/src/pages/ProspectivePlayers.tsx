@@ -66,7 +66,7 @@ function ProspectivePlayers() {
           won't only be your best friends, they will be family. You will learn
           the various ways ultimate is played, how to expand your throwing
           arsenal, how to improve your athleticism, and how to take your game to
-          the next level. A majority of our team didn't play organized ultimate
+          the next level. Many players on our teams didn't play organized ultimate
           before coming to college, and are now some of the best players in the
           Great Lakes region (see our All-Regions honors page).
         </Typography>

@@ -101,7 +101,7 @@ function Sidebars({ children }: SidebarsProps) {
                   />
                   <SocialButton
                     image={twitterButton}
-                    link="https://twitter.com/illinois_rise"
+                    link="https://x.com/Illinois_Rise"
                   />
                   <SocialButton
                     image={emailButton}

@@ -2,6 +2,21 @@ import { Award } from "./awards.model";
 
 export const AWARDS_DATA: Award[] = [
   {
+    year: 2025,
+    name: "Nate Astrom",
+    award: "Great Lakes All Region 1st Team"
+  },
+  {
+    year: 2024,
+    name: "Nate Astrom",
+    award: "Great Lakes All Region 1st Team"
+  },
+  {
+    year: 2024,
+    name: "Kai Tang",
+    award: "Great Lakes All Region Honorable Mention"
+  },
+  {
     year: 2023,
     name: "Kai Tang",
     award: "Great Lakes All Region 1st Team"

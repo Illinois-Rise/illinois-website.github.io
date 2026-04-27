@@ -2,6 +2,30 @@ import { Result } from "./results.model";
 
 export const RESULTS_DATA: Result[] = [
   {
+    year: 2026,
+    sectionals: "1st",
+    regionals: "3rd",
+    nationals: "-",
+    teamPageLabel: "USAU",
+    teamPageLink: "https://play.usaultimate.org/teams/events/Eventteam/?TeamId=v4RPmuTBa6f60D6I1UODKcqE1Mjn0wrYbCE5tRhHsjs%3d"
+  },
+  {
+    year: 2025,
+    sectionals: "2nd",
+    regionals: "4th",
+    nationals: "-",
+    teamPageLabel: "USAU",
+    teamPageLink: "https://play.usaultimate.org/teams/events/Eventteam/?TeamId=C0RIaLJN4Q3aGd8nysYRvoGLcCvnv4%2b3W2U4vTHJBWY%3d"
+  },
+  {
+    year: 2024,
+    sectionals: "1st",
+    regionals: "2nd",
+    nationals: "-",
+    teamPageLabel: "USAU",
+    teamPageLink: "https://play.usaultimate.org/teams/events/Eventteam/?TeamId=QnyZ1d5IxtM2dCDyUvAuKA01L08GRUbP1W%2fdNHlOPD0%3d"
+  },
+  {
     year: 2023,
     sectionals: "2nd",
     regionals: "3rd",
