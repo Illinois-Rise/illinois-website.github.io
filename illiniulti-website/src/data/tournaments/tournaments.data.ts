@@ -2,6 +2,197 @@ import { TournamentYear } from "./tournament.model";
 //TODO: If the namelink is empty, then don't show a link to be able to be clicked
 
 export const TOURNAMENTS_DATA: TournamentYear[] = [
+     {
+    year: 2026,
+    tournaments: [
+      {
+        season: "Fall",
+        nameLabel: "No Wisconsequences",
+        nameLink: "",
+        when: "Oct. 4th-5th",
+        location: "Hartland, WI",
+        result: "3rd"
+      },
+      {
+        season: "Fall",
+        nameLabel: "Missouri Loves Company",
+        nameLink: "",
+        when: "Nov. 1st-2nd",
+        location: "Columbia, MO",
+        result: "7th"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Florida Warmup",
+        nameLink: "https://play.usaultimate.org/events/Florida-Warm-Up-2026/",
+        when: "Jan. 30th-Feb. 1st",
+        location: "Apopka, FL",
+        result: "18th"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Midwest Throwdown",
+        nameLink: "https://play.usaultimate.org/events/Midwest-Throwdown-2026/",
+        when: "Feb. 28th-Mar. 1st",
+        location: "Edwardsville, IL",
+        result: "9th"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Stanford Invite",
+        nameLink: "https://play.usaultimate.org/events/Stanford-Invite-2026/",
+        when: "Mar. 14th-15th",
+        location: "Palo Alto, CA",
+        result: "6th"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Illinois Conferences",
+        nameLink: "https://play.usaultimate.org/events/Illinois-D-I-Mens-Conferences-2026/",
+        when: "Apr. 11th-12th",
+        location: "Chicago, IL",
+        result: "1st"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Great Lakes D-I College Men's Regionals",
+        nameLink: "https://play.usaultimate.org/events/Great-Lakes-D-I-College-Mens-Regionals-2026/",
+        when: "Apr. 25th-26th",
+        location: "Holland, MI",
+        result: "3rd"
+      },
+    ]
+  },
+   {
+    year: 2025,
+    tournaments: [
+      {
+        season: "Fall",
+        nameLabel: "No Wisconsequences",
+        nameLink: "",
+        when: "Oct. 5th-6th",
+        location: "Hartland, WI",
+        result: "3rd"
+      },
+      {
+        season: "Fall",
+        nameLabel: "Missouri Loves Company",
+        nameLink: "",
+        when: "Nov. 2nd-3rd",
+        location: "Columbia, MO",
+        result: "8th"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Santa Barbara Invite",
+        nameLink: "https://play.usaultimate.org/events/santa-barbara-invite-2025/",
+        when: "Jan. 25th-26th",
+        location: "Goleta, CA",
+        result: "T-7th*"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Centex",
+        nameLink: "https://play.usaultimate.org/events/Mens-Centex-2025/",
+        when: "Mar. 15th-16th",
+        location: "Austin, TX",
+        result: "6th"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Corny Classic",
+        nameLink: "https://play.usaultimate.org/events/corny-classic-college-2025/",
+        when: "Mar. 29th-30th",
+        location: "Urbana, IL",
+        result: "1st"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Illinois Conferences",
+        nameLink: "https://play.usaultimate.org/events/Illinois-D-I-Mens-Conferences-2025/",
+        when: "Apr. 12th-13th",
+        location: "Chicago, IL",
+        result: "2nd"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Great Lakes D-I College Men's Regionals",
+        nameLink: "https://play.usaultimate.org/events/Great-Lakes-D-I-College-Mens-Regionals-2025/",
+        when: "Apr. 26th-27th",
+        location: "Holland, MI",
+        result: "4th"
+      },
+    ]
+  },
+  {
+    year: 2024,
+    tournaments: [
+      {
+        season: "Fall",
+        nameLabel: "Stanley Cup",
+        nameLink: "",
+        when: "Sep. 16th-17th",
+        location: "Normal, IL",
+        result: "-"
+      },
+      {
+        season: "Fall",
+        nameLabel: "No Wisconsequences",
+        nameLink: "",
+        when: "Oct. 7th-8th",
+        location: "Hartland, WI",
+        result: "1st"
+      },
+      {
+        season: "Fall",
+        nameLabel: "Missouri Loves Company",
+        nameLink: "",
+        when: "Oct. 28th-29th",
+        location: "Hartland, WI",
+        result: "?*"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Golden Triangle Invite",
+        nameLink: "https://play.usaultimate.org/events/Golden-Triangle-Invitational/",
+        when: "Feb. 10th-11th",
+        location: "Columbus, MS",
+        result: "1st"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Stanford Invite",
+        nameLink: "https://play.usaultimate.org/events/Stanford-Invite-2024/",
+        when: "Mar. 2nd-3rd",
+        location: "Stevinson, CA",
+        result: "7th"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Centex",
+        nameLink: "https://play.usaultimate.org/events/College-Mens-Centex-Tier-1/schedule/Men/CollegeMen/",
+        when: "Mar. 16th-17th",
+        location: "Round Rock, TX",
+        result: "T-1st*"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Illinois Conferences",
+        nameLink: "https://play.usaultimate.org/events/Illinois-D-I-Mens-Conferences-2024/",
+        when: "Apr. 13th-14th",
+        location: "Rantoul, IL",
+        result: "1st"
+      },
+      {
+        season: "Spring",
+        nameLabel: "Great Lakes D-I College Men's Regionals",
+        nameLink: "https://play.usaultimate.org/events/Great-Lakes-D-I-College-Mens-Regionals-2024/",
+        when: "Apr. 27th-28th",
+        location: "Zeeland, MI",
+        result: "2nd"
+      },
+    ]
+  },
   {
     year: 2023,
     tournaments: [

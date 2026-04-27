@@ -35,7 +35,7 @@ function Tournaments() {
         </Box>
         <Outlet />
         <Typography m={1} variant="body1">
-          * Indicates bracket play not completed due to inclement weather (2019)
+          * Indicates bracket play not completed due to inclement weather (2019, 2024,2025)
         </Typography>
       </Box>
     </>

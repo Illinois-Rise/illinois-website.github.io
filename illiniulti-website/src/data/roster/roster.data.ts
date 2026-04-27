@@ -5,6 +5,468 @@ import { RosterYear } from "./roster.model";
 
 export const ROSTER_DATA: RosterYear[] = [
   {
+    year: 2026,
+    imagePath: "./assets/team-photo-2026.jpg",
+   players: [
+    {
+      number: 0,
+      name: "Jake Fujiwara",
+      year: "Sophomore",
+    },
+    {
+      number: 2,
+      name: "Arjun Samudrala",
+      year: "Sophomore",
+    },
+    {
+      number: 3,
+      name: "Dean Gottlieb*",
+      year: "Senior",
+    },
+    {
+      number: 4,
+      name: "Kaidan Mavros",
+      year: "Freshman",
+    },
+    {
+      number: 6,
+      name: "Matthew Conroy",
+      year: "Sophmore",
+    },
+    {
+      number: 7,
+      name: 'Alex "Log" Paulauskas',
+      year: "Freshman",
+    },
+    {
+      number: 8,
+      name: "Andrew Chen",
+      year: "Sophomore",
+    },
+    {
+      number: 9,
+      name: "Kai Tang",
+      year: "Grad",
+    },
+    {
+      number: 10,
+      name: 'Carter "Bug" Rodgers*',
+      year: "Junior",
+    },
+    {
+      number: 11,
+      name: "Aadit Bhatia",
+      year: "Sophomore",
+    },
+    {
+      number: 12,
+      name: "Nathaniel Astrom*",
+      year: "Senior",
+    },
+    {
+      number: 13,
+      name: 'Jackson "State" Kiedaisch',
+      year: "Junior",
+    },
+    {
+      number: 14,
+      name: "Shea Sturtevant",
+      year: "Sophmore",
+    },
+    {
+      number: 15,
+      name: 'Evan "TJ" Sebastian',
+      year: "Senior",
+    },
+    {
+      number: 17,
+      name: "William Voss",
+      year: "Senior",
+    },
+    {
+      number: 18,
+      name: "Mehlum Anjarwala",
+      year: "Junior",
+    },
+    {
+      number: 19,
+      name: "Griffin Kelley*",
+      year: "Senior",
+    },
+    {
+      number: 20,
+      name: "Judah Kim",
+      year: "Freshman",
+    },
+    {
+      number: 21,
+      name: "Eli Artemakis",
+      year: "Grad",
+    },
+    {
+      number: 22,
+      name: "Spencer Sadler",
+      year: "Senior",
+    },
+    {
+      number: 29,
+      name: "Sean Hickey",
+      year: "Senior",
+    },
+    {
+      number: 34,
+      name: "Carson Splear",
+      year: "Senior",
+    },
+    {
+      number: 42,
+      name: "Logan Lambright",
+      year: "Unc",
+    },
+    {
+      number: 58,
+      name: "Abe Palmer",
+      year: "Sophomore",
+    },
+    {
+      number: 66,
+      name: 'Leron Wu',
+      year: "Freshman",
+    },
+    {
+      number: 77,
+      name: "Kushal Kothapalli",
+      year: "Junior",
+    },
+    {
+      number: 83,
+      name: "Eric Cai",
+      year: "Sophomore",
+    },
+    {
+      number: 88,
+      name: "Joe Pozen",
+      year: "Freshman",
+    },
+    {
+      number: undefined,
+      name: "Eric Badger",
+      year: "Coach",
+    },
+    {
+      number: undefined,
+      name: "Charles Furse",
+      year: "Coach",
+    },
+    {
+      number: undefined,
+      name: "Benjamin Preiss",
+      year: "Coach",
+    },
+  ]
+
+  },
+  {
+    year: 2025,
+    imagePath: "./assets/team-photo-2025.jpg",
+    players: [
+      {
+        number: 4,
+        name: "Kai Bowen*",
+        year: "Senior",
+      },
+      {
+        number: 5,
+        name: "Arjun Samudrala",
+        year: "Freshman",
+      },
+      {
+        number: 8,
+        name: "Andrew Chen",
+        year: "Freshman",
+      },
+      {
+        number: 9,
+        name: "Kai Tang",
+        year: "Grad",
+      },
+      {
+        number: 10,
+        name: 'Carter "Bug" Rodgers',
+        year: "Sophomore",
+      },
+      {
+        number: 11,
+        name: "Aadit Bhatia",
+        year: "Freshman",
+      },
+      {
+        number: 12,
+        name: "Nathaniel Astrom*",
+        year: "Junior",
+      },
+      {
+        number: 15,
+        name: 'Evan "TJ" Sebastian',
+        year: "Junior",
+      },
+      {
+        number: 16,
+        name: "Samuel Astrom",
+        year: "Freshman",
+      },
+      {
+        number: 17,
+        name: "William Voss",
+        year: "Junior",
+      },
+      {
+        number: 18,
+        name: "Rishabh Srinivas",
+        year: "Freshman",
+      },
+      {
+        number: 19,
+        name: "Griffin Kelley",
+        year: "Junior",
+      },
+      {
+        number: 22,
+        name: "Spencer Sadler",
+        year: "Junior",
+      },
+      {
+        number: 25,
+        name: "Simon Perez*",
+        year: "Senior",
+      },
+      {
+        number: 26,
+        name: "Kushal Kothapalli",
+        year: "Sophomore",
+      },
+      {
+        number: 27,
+        name: "Jake Fujiwara",
+        year: "Freshman",
+      },
+      {
+        number: 28,
+        name: 'Pupetch "Patches" Nimnark',
+        year: "Senior",
+      },
+      {
+        number: 29,
+        name: "Sean Hickey",
+        year: "Junior",
+      },
+      {
+        number: 30,
+        name: "Daniel Sawai",
+        year: "Senior",
+      },
+      {
+        number: 34,
+        name: "Carson Splear",
+        year: "Junior",
+      },
+      {
+        number: 40,
+        name: "Emil Weisfeld*",
+        year: "Senior",
+      },
+    
+      {
+        number: 49,
+        name: "Nathan Zock",
+        year: "Senior",
+      },
+      {
+        number: 58,
+        name: "Abe Palmer",
+        year: "Freshman",
+      },
+      {
+        number: 76,
+        name: 'Jeffrey "Lefty" Lefkovitz',
+        year: "Sophmore",
+      },
+      {
+        number: 83,
+        name: "Eric Cai",
+        year: "Freshman",
+      },
+      {
+        number: 88,
+        name: "Hunter Latson",
+        year: "Grad",
+      },
+      {
+        number: undefined,
+        name: "Eric Badger",
+        year: "Coach",
+      },
+      {
+        number: undefined,
+        name: "Charles Furse",
+        year: "Coach",
+      },
+      {
+        number: undefined,
+        name: "Dean Gottlieb",
+        year: "Coach",
+      },
+    ]
+
+  },
+  {
+    year: 2024,
+    imagePath: "./assets/team-photo-2024.jpg",
+    players: [
+      {
+        number: 0,
+        name: "Eli Artemakis*",
+        year: "Senior",
+      },
+      {
+        number: 2,
+        name: "Nathaniel Astrom",
+        year: "Sophmore",
+      },
+      {
+        number: 3,
+        name: "Dean Gottlieb",
+        year: "Sophomore",
+      },
+      {
+        number: 4,
+        name: "Kai Bowen",
+        year: "Junior",
+      },
+      {
+        number: 6,
+        name: 'Kevin "Casper" Lui',
+        year: "Senior",
+      },
+      {
+        number: 7,
+        name: "Timothy Sheehan*",
+        year: "Senior",
+      },
+      {
+        number: 9,
+        name: "Kai Tang",
+        year: "Senior",
+      },
+      {
+        number: 10,
+        name: 'Carter "Bug" Rodgers',
+        year: "Freshman",
+      },
+      {
+        number: 15,
+        name: 'Evan "TJ" Sebastian',
+        year: "Sophmore",
+      },
+      {
+        number: 17,
+        name: "William Voss",
+        year: "Sophomore",
+      },
+      {
+        number: 19,
+        name: "Griffin Kelley",
+        year: "Sophomore",
+      },
+      {
+        number: 20,
+        name: "Ryan Roach",
+        year: "Grad",
+      },
+      {
+        number: 21  ,
+        name: "Alex Zheng",
+        year: "Grad",
+      },
+      {
+        number: 26,
+        name: "Kushal Kothapalli",
+        year: "Freshman",
+      },
+      {
+        number: 28,
+        name: 'Pupetch "Patches" Nimnark',
+        year: "Junior",
+      },
+      {
+        number: 29,
+        name: "Sean Hickey",
+        year: "Sophomore",
+      },
+      {
+        number: 30,
+        name: "Daniel Sawai",
+        year: "Junior",
+      },
+      {
+        number: 32,
+        name: "Simon Perez*",
+        year: "Junior",
+      },
+      {
+        number: 33,
+        name: "Trevor Scott*",
+        year: "Senior",
+      },
+      {
+        number: 34,
+        name: "Carson Splear",
+        year: "Sophmore",
+      },
+    
+      {
+        number: 40,
+        name: "Emil Weisfeld",
+        year: "Junior",
+      },
+      {
+        number: 42,
+        name: "Kevin Tan",
+        year: "Grad",
+      },
+      {
+        number: 43,
+        name: "Mehlum Anjarwala",
+        year: "Freshman",
+      },
+      {
+        number: 49,
+        name: "Nathan Zock",
+        year: "Junior",
+      },
+      {
+        number: 75,
+        name: "Matthew Rylander",
+        year: "Senior",
+      },
+      {
+        number: 85,
+        name: "Hunter Latson",
+        year: "Grad",
+      },
+      {
+        number: undefined,
+        name: "Eric Badger",
+        year: "Coach",
+      },
+      {
+        number: undefined,
+        name: "Bradley Bolliger",
+        year: "Coach",
+      },
+    ]
+  },
+  {
     year: 2023,
     imagePath: "./assets/team-photo-2023.jpg",
     players: [
